@@ -3,17 +3,17 @@ import Wave from 'react-wavify';
 function Wavee() {
   return (
     <>
-      <div className='pb-[10%] overflow-visible'>
+      <div className=''>
         <Wave
           className='rotate-180 absolute w-screen h-[60vh] mb-[5%]'
           fill='#0a0a0a'
           paused={false}
           opacity='0.7'
           options={{
-            height: 20,
+            height: 100,
             amplitude: 90,
             speed: 0.12,
-            points: 4,
+            points: 6,
           }}
         />
         <Wave
@@ -25,7 +25,7 @@ function Wavee() {
             height: 100,
             amplitude: 90,
             speed: 0.18,
-            points: 4,
+            points: 5,
           }}
         />
         <Wave
@@ -49,7 +49,7 @@ function Wavee() {
             height: 100,
             amplitude: 90,
             speed: 0.15,
-            points: 4,
+            points: 5,
           }}
         />
       </div>

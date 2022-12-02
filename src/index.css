@@ -3,10 +3,10 @@
   font-family: 'Exo', sans-serif;
 }
 .stack {
-  @apply text-white xl:text-zinc-800 text-4xl xl:text-7xl;
+  @apply text-white xl:text-zinc-800 text-4xl xl:text-6xl;
 }
 .tool {
-  @apply text-white xl:text-zinc-800 text-3xl xl:text-7xl;
+  @apply text-zinc-800 text-3xl xl:text-5xl;
 }
 @tailwind base;
 @tailwind components;
