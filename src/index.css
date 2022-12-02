@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100&display=swap');
+.body {
+  font-family: 'Exo', sans-serif;
+}
+.icon {
+  @apply text-white xl:text-zinc-800 text-4xl xl:text-7xl;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
