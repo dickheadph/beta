@@ -42,7 +42,7 @@ function Stack() {
               <SiJavascript className='icon' />
             </li>
           </ul>
-          <h1 className='text-center'>Stack</h1>
+          <h1 className='text-center text-white xl:text-black'>Stack</h1>
         </div>
         <div>
           <ul className='flex flex-wrap space-x-2 items-center'>
@@ -65,7 +65,7 @@ function Stack() {
               <SiVisualstudiocode className='icon' />
             </li>
           </ul>
-          <h1 className='text-center'>Tools</h1>
+          <h1 className='text-center text-white xl:text-black'>Tools</h1>
         </div>
       </section>
     </>
