@@ -10,16 +10,16 @@ function Hero() {
           <img
             src={Me}
             alt='me'
-            className='w-[380px] lg:block hidden rounded-full'
+            className='w-[400px] lg:block hidden rounded-full'
           />
         </div>
-        <div className='lg:w-6/12 w-full xl:mx-0 mx-10'>
-          <p>Hi there, I am...</p>
-          <h1 className='text-5xl xl:text-7xl font-semibold my-3'>
+        <div className='lg:w-6/12 w-full xl:mx-0 mx-10 font-semibold'>
+          <p>HI THERE! I AM...</p>
+          <h1 className='text-5xl xl:text-7xl font-semibold xl:font-bold my-3'>
             Shan Carl Parce Belgica
           </h1>
           <p>
-            I am a Web-Developer. Specializing in Web Design and Front-end
+            I'm a Web-Developer. Specializing in Web Design and Front-end
             Development.
           </p>
           <p>I help start-ups Design and Deploy their Busines Online.</p>

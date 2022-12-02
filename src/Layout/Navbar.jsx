@@ -1,11 +1,12 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
+import Logo from '../assets/s.png';
 function Navbar() {
   return (
     <div className='z-10'>
-      <div className='flex items-center justify-between text-white lg:px-[10%] lg:py-[35px] p-[5%] bg-stone-900 text-lg border-none'>
+      <div className='flex items-center justify-between text-white lg:px-[10%] lg:py-[22px] px-[5%] py-[4%] bg-stone-900 text-lg border-none'>
         <div className=''>
-          <h1>Logo</h1>
+          <img src={Logo} alt='' className='w-[70px] xl:w-[100px]' />
         </div>
         <div className='lg:block hidden'>
           <ul className='flex justify-evenly'>

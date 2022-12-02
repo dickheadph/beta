@@ -1,5 +1,6 @@
 import React from 'react';
 import '../index.css';
+import { CgArrowsExchange } from 'react-icons/cg';
 import {
   SiFirebase,
   SiTailwindcss,
@@ -19,53 +20,57 @@ function Stack() {
     <>
       <section className='absolute xl:top-[70%] xl:left-[30%] top-[50%] mx-10'>
         <div>
-          <ul className='flex flex-wrap space-x-2'>
+          <ul className='flex flex-wrap xl:space-x-10 space-x-2'>
             <li>
-              <SiFirebase className='icon' />
+              <SiFirebase className='stack' />
             </li>
             <li>
-              <SiTailwindcss className='icon' />
+              <SiReact className='stack' />
             </li>
             <li>
-              <SiReact className='icon' />
+              <SiTailwindcss className='stack' />
             </li>
             <li>
-              <SiHtml5 className='icon' />
+              <SiHtml5 className='stack' />
             </li>
             <li>
-              <SiCss3 className='icon' />
+              <SiCss3 className='stack' />
             </li>
             <li>
-              <SiBootstrap className='icon' />
+              <SiBootstrap className='stack' />
             </li>
             <li>
-              <SiJavascript className='icon' />
+              <SiJavascript className='stack' />
             </li>
           </ul>
-          <h1 className='text-center text-white xl:text-black'>Stack</h1>
+          <h1 className='text-center text-white xl:text-black text-xl my-2 font-semibold'>
+            Tech<em className='text-zinc-700'>Stack</em>
+          </h1>
         </div>
         <div>
-          <ul className='flex flex-wrap space-x-2 items-center'>
-            <li className='text-lg font-bold text-white xl:text-black'>
-              A<em>X</em>IOS
+          <ul className='flex flex-wrap space-x-2 xl:space-x-8 items-center justify-center'>
+            <li className='xl:text-lg font-bold text-white xl:text-black'>
+              <CgArrowsExchange className='tool' /> A<em>X</em>IOS
             </li>
             <li>
-              <SiGit className='icon' />
+              <SiGit className='tool' />
             </li>
             <li>
-              <SiGithub className='icon' />
+              <SiGithub className='tool' />
             </li>
             <li>
-              <SiFramer className='icon' />
+              <SiFramer className='tool' />
             </li>
             <li>
-              <SiFigma className='icon' />
+              <SiFigma className='tool' />
             </li>
             <li>
-              <SiVisualstudiocode className='icon' />
+              <SiVisualstudiocode className='tool' />
             </li>
           </ul>
-          <h1 className='text-center text-white xl:text-black'>Tools</h1>
+          <h1 className='text-center text-white xl:text-black  text-xl my-2 font-semibold'>
+            Tools
+          </h1>
         </div>
       </section>
     </>

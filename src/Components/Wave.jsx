@@ -11,9 +11,9 @@ function Wavee() {
           opacity='0.7'
           options={{
             height: 20,
-            amplitude: 100,
+            amplitude: 90,
             speed: 0.12,
-            points: 6,
+            points: 4,
           }}
         />
         <Wave
@@ -22,10 +22,10 @@ function Wavee() {
           paused={false}
           opacity='0.6'
           options={{
-            height: 20,
+            height: 100,
             amplitude: 90,
             speed: 0.18,
-            points: 5,
+            points: 4,
           }}
         />
         <Wave
@@ -34,10 +34,10 @@ function Wavee() {
           paused={false}
           opacity='0.5'
           options={{
-            height: 20,
+            height: 90,
             amplitude: 100,
             speed: 0.14,
-            points: 5,
+            points: 4,
           }}
         />
         <Wave
@@ -46,10 +46,10 @@ function Wavee() {
           paused={false}
           opacity='0.10'
           options={{
-            height: 20,
+            height: 100,
             amplitude: 90,
             speed: 0.15,
-            points: 6,
+            points: 4,
           }}
         />
       </div>

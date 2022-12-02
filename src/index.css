@@ -2,8 +2,11 @@
 .body {
   font-family: 'Exo', sans-serif;
 }
-.icon {
+.stack {
   @apply text-white xl:text-zinc-800 text-4xl xl:text-7xl;
+}
+.tool {
+  @apply text-white xl:text-zinc-800 text-3xl xl:text-7xl;
 }
 @tailwind base;
 @tailwind components;
