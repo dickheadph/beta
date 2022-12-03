@@ -6,12 +6,12 @@ function Hero() {
   return (
     <>
       <Wave />
-      <section className='absolute z-10 flex items-center text-white lg:top-[13%] lg:px-10 xl:top-[18%] xl:left-[20%]'>
+      <section className='absolute z-10 flex items-center text-white lg:top-[13%] lg:px-10 xl:top-[15%] xl:left-[20%]'>
         <div className='border-r-[2px] lg:mr-[4%] lg:w-5/12 xl:mr-[4%] xl:w-4/12'>
           <img
             src={Me}
             alt='me'
-            className='hidden rounded-full lg:ml-20 lg:block lg:w-[250px] xl:ml-0 xl:w-[400px]'
+            className='hidden rounded-full lg:ml-20 lg:block lg:w-[250px] xl:ml-0 xl:w-[380px]'
           />
         </div>
         <div className='m-10 w-full text-sm md:mx-auto md:w-9/12 md:text-base lg:w-6/12 xl:mx-0 xl:w-6/12 xl:font-semibold'>
