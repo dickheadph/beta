@@ -24,7 +24,7 @@ function Hero() {
             Online.
           </p>
           <div className='text-center mt-5'>
-            <button className='p-2 px-3 rounded bg-transparent border-[1px] text-xs'>
+            <button className='p-2 px-3 rounded bg-transparent border-[1px] text-xs outline-none'>
               REACH OUT
             </button>
           </div>
