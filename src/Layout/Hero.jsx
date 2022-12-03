@@ -19,14 +19,11 @@ function Hero() {
           <h1 className='my-6 text-4xl font-bold md:text-6xl lg:text-5xl xl:text-7xl'>
             Shan Carl Parce Belgica
           </h1>
-          <p className='mt-5 md:my-5 lg:my-3'>
+          <p className=''>
             I'm a Web-Developer. Specializing in Web Design and Front-end
             Development. I help start-ups Design and Deploy their Busines
             Online.
           </p>
-          <div className='text-center md:pt-0 xl:pt-5'>
-            <Button name='REACH OUT' />
-          </div>
         </div>
       </section>
     </>

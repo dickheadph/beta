@@ -1,6 +1,7 @@
 import React from 'react';
 import '../index.css';
 import { CgArrowsExchange } from 'react-icons/cg';
+import Button from '../Shared/Button';
 import {
   SiFirebase,
   SiTailwindcss,
@@ -23,7 +24,10 @@ function Stack() {
   return (
     <>
       <Socials />
-      <section className='absolute top-[54%] w-full md:top-[60%] lg:top-[63%] xl:top-[70%] '>
+      <section className='absolute top-[45%] w-full md:top-[60%] lg:top-[63%] xl:top-[70%] '>
+        <div className='pb-6 text-center md:pt-0 xl:pt-5'>
+          <Button name='REACH OUT' />
+        </div>
         <div>
           <ul className='flex flex-wrap items-center justify-center space-x-2 md:space-x-7 xl:space-x-10'>
             <li>
@@ -92,7 +96,7 @@ function Stack() {
           <Projects />
         </div>
         <h1 className='my-[3%] text-center text-xl font-semibold md:text-zinc-800 xl:text-4xl'>
-          SER<em className='bg-zinc-900 text-white px-2'>VICES</em>
+          SER<em className='bg-zinc-900 px-2 text-white'>VICES</em>
         </h1>
         <div className='flex flex-wrap justify-center md:mx-[10%] lg:mx-0'>
           <Placard />
