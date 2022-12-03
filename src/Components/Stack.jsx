@@ -22,7 +22,7 @@ function Stack() {
   return (
     <>
       <Socials />
-      <section className='absolute top-[55%] w-full md:top-[56%] lg:top-[70%]'>
+      <section className='absolute top-[55%] w-full md:top-[60%] lg:top-[63%] xl:top-[70%]'>
         <div>
           <ul className='flex flex-wrap items-center justify-center space-x-2 md:space-x-7 xl:space-x-10'>
             <li>
@@ -79,10 +79,13 @@ function Stack() {
             Tools
           </h1>
         </div>
-        <h1 className='my-[4%] text-center text-xl font-semibold md:text-zinc-800'>
+        <h1 className='my-[4%] text-center text-xl font-semibold md:text-zinc-800 xl:text-4xl'>
           PRO<em className='text-zinc-900'>JECTS</em>
         </h1>
         <div className='m-2 flex flex-wrap justify-center'>
+          <Projects />
+          <Projects />
+          <Projects />
           <Projects />
           <Projects />
           <Projects />

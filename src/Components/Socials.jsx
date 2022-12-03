@@ -5,21 +5,21 @@ function Socials() {
   return (
     <>
       <div className='absolute bottom-[8%] left-16 hidden lg:block'>
-        <ul className='flex lg:block xl:space-y-3'>
+        <ul className='flex lg:block lg:space-y-3'>
           <li>
-            <SiGithub className='animate-bounce' size={'25px'} />
+            <SiGithub className=' animate-bounce' />
           </li>
           <li>
-            <FaEnvelope size={'20px'} />
+            <FaEnvelope className={''} />
           </li>
           <li>
-            <FaMobile size={'20px'} />
+            <FaMobile className={''} />
           </li>
           <li>
-            <SiLinkedin size={'20px'} />
+            <SiLinkedin className={''} />
           </li>
           <li>
-            <SiIndeed size={'20px'} />
+            <SiIndeed className={''} />
           </li>
         </ul>
       </div>
