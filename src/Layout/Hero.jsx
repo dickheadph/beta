@@ -11,7 +11,7 @@ function Hero() {
           <img
             src={Me}
             alt='me'
-            className='hidden rounded-full lg:ml-20 lg:block lg:w-[250px] xl:ml-0 xl:w-[380px]'
+            className='hidden rounded-full lg:ml-20 lg:block lg:w-[250px] xl:ml-0 xl:w-[360px]'
           />
         </div>
         <div className='mx-10 mt-8 w-full text-sm md:mx-auto md:w-9/12 md:text-base lg:w-6/12 xl:mx-0 xl:w-6/12 xl:font-semibold'>
