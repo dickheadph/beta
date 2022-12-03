@@ -3,7 +3,7 @@ import { FaLock } from 'react-icons/fa';
 function Placard() {
   return (
     <>
-      <div className='mx-4 my-2 rounded border-[1px] border-zinc-700 p-5 lg:w-[400px] xl:w-[600px]'>
+      <div className='m-2 rounded border-[1px] border-zinc-700 p-5 lg:w-[400px] xl:w-[600px]'>
         <h1 className='font-bold'>
           <FaLock />
           Security

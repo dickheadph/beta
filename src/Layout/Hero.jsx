@@ -1,7 +1,7 @@
 import React from 'react';
 import Wave from '../Components/Wave';
 import Me from '../assets/me.png';
-import Button from '../Shared/Button';
+import Button from '../Shared/PrimButton';
 function Hero() {
   return (
     <>

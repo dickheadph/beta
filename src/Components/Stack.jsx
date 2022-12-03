@@ -1,7 +1,7 @@
 import React from 'react';
 import '../index.css';
 import { CgArrowsExchange } from 'react-icons/cg';
-import Button from '../Shared/Button';
+import Button from '../Shared/SecButton';
 import {
   SiFirebase,
   SiTailwindcss,
@@ -20,11 +20,12 @@ import {
 import Socials from './Socials';
 import Projects from '../Components/Projects';
 import Placard from './Placard';
+import Contact from './Contact';
 function Stack() {
   return (
     <>
       <Socials />
-      <section className='absolute top-[45%] w-full md:top-[60%] lg:top-[63%] xl:top-[70%] '>
+      <section className='absolute top-[45%] w-full md:top-[60%] lg:top-[63%] xl:top-[65%] '>
         <div className='pb-6 text-center md:pt-0 xl:pt-5'>
           <Button name='REACH OUT' />
         </div>
@@ -52,7 +53,7 @@ function Stack() {
               <SiJavascript className='stack' />
             </li>
           </ul>
-          <h1 className='my-2 text-center text-xl font-semibold text-white md:text-zinc-800 xl:text-black'>
+          <h1 className='font-semiboldtext-zinc-800 my-2 text-center text-xl xl:text-black'>
             Tech<em className='text-zinc-900'>Stack</em>
           </h1>
         </div>
@@ -104,6 +105,7 @@ function Stack() {
           <Placard />
           <Placard />
         </div>
+        <Contact />
       </section>
     </>
   );

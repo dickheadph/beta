@@ -1,7 +1,8 @@
 import React from 'react';
 import Wave from '../assets/wave.png';
 import Card from '../Shared/Card';
-import Button from '../Shared/Button';
+import Button from '../Shared/PrimButton';
+import SecButton from '../Shared/SecButton';
 function Proects() {
   return (
     <>
@@ -24,7 +25,7 @@ function Proects() {
           </div>
           <div className='mb-4 flex justify-center space-x-6'>
             <Button name='Live Website' />
-            <Button name='Github Repo' />
+            <SecButton name='Github Repo' />
           </div>
         </div>
       </Card>

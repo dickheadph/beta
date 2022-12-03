@@ -4,7 +4,7 @@ import { FaEnvelope, FaMobile } from 'react-icons/fa';
 function Socials() {
   return (
     <>
-      <div className='absolute bottom-[8%] left-16 hidden lg:block'>
+      <div className='absolute bottom-[8%] left-16'>
         <ul className='flex lg:block lg:space-y-3'>
           <li>
             <SiGithub className=' animate-bounce' />
