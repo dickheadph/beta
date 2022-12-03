@@ -1,17 +1,22 @@
 import React from 'react';
 import Wave from '../Components/Wave';
 import Me from '../assets/me.png';
+import Button from '../Shared/Button';
 function Hero() {
   return (
     <>
       <Wave />
-      <section className='absolute text-white flex z-10 xl:left-[20%] lg:top-[18%] items-center lg:px-10'>
-        <div className='xl:w-4/12 lg:w-5/12 border-r-[2px] xl:mr-[4%]'>
-          <img src={Me} alt='me' className='lg:w-[400px] lg:block hidden rounded-full' />
+      <section className='absolute z-10 flex items-center text-white lg:top-[18%] lg:px-10 xl:left-[20%]'>
+        <div className='border-r-[2px] lg:w-5/12 xl:mr-[4%] xl:w-4/12'>
+          <img
+            src={Me}
+            alt='me'
+            className='hidden rounded-full lg:block lg:w-[400px]'
+          />
         </div>
-        <div className='xl:w-6/12 lg:w-6/12 md:w-9/12 w-full xl:mx-0 md:mx-auto m-10 xl:font-semibold md:text-base text-sm'>
-          <p>HI THERE! I AM...</p>
-          <h1 className='text-5xl xl:text-7xl md:text-6xl font-bold my-3'>
+        <div className='m-10 w-full text-sm md:mx-auto md:w-9/12 md:text-base lg:w-6/12 xl:mx-0 xl:w-6/12 xl:font-semibold'>
+          <p className='font-semibold md:font-normal'>HI THERE! I AM...</p>
+          <h1 className='my-6 text-5xl font-bold md:text-6xl xl:text-7xl'>
             Shan Carl Parce Belgica
           </h1>
           <p className='md:py-5'>
@@ -19,10 +24,8 @@ function Hero() {
             Development. I help start-ups Design and Deploy their Busines
             Online.
           </p>
-          <div className='text-center xl:pt-5 md:pt-0 pt-5'>
-            <button className='p-2 px-3 rounded bg-transparent border-[1px] text-xs outline-none'>
-              REACH OUT
-            </button>
+          <div className='py-5 text-center md:pt-0 xl:pt-5'>
+            <Button name='REACH OUT' />
           </div>
         </div>
       </section>

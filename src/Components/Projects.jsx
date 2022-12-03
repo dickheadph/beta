@@ -1,6 +1,7 @@
 import React from 'react';
 import Wave from '../assets/wave.png';
 import Card from '../Shared/Card';
+import Button from '../Shared/Button';
 function Proects() {
   return (
     <>
@@ -8,8 +9,10 @@ function Proects() {
         <div>
           <img src={Wave} alt='' className='w-full object-cover' />
           <div className='p-4'>
-            <h1>Monito | Pet Shop</h1>
-            <p className='text-justify'>
+            <h1 className='text-center text-xl font-bold xl:text-left'>
+              Monito | Pet Shop
+            </h1>
+            <p className='text-justify indent-8'>
               Homerun as an e-commerce site built for Homeowners and brokers.
               This app enables users to create listings and specify whether
               their Home is for sale or for Rent. This app is built using
@@ -20,12 +23,8 @@ function Proects() {
             </p>
           </div>
           <div className='mb-4 flex justify-center space-x-6'>
-            <button className='rounded border-[1px] bg-transparent py-2 px-3 outline-none hover:bg-zinc-900 hover:text-white'>
-              Live Website
-            </button>
-            <button className='rounded border-[1px] bg-transparent py-2 px-3 outline-none hover:bg-zinc-900 hover:text-white'>
-              Github Repo
-            </button>
+            <Button name='Live Website' />
+            <Button name='Github Repo' />
           </div>
         </div>
       </Card>

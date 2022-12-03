@@ -22,7 +22,7 @@ function Stack() {
   return (
     <>
       <Socials />
-      <section className='absolute top-[52%] w-full md:top-[56%] lg:top-[70%]'>
+      <section className='absolute top-[55%] w-full md:top-[56%] lg:top-[70%]'>
         <div>
           <ul className='flex flex-wrap items-center justify-center space-x-2 md:space-x-7 xl:space-x-10'>
             <li>
