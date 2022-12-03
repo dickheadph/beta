@@ -25,9 +25,12 @@ function Stack() {
   return (
     <>
       <Socials />
-      <section className='absolute top-[45%] w-full md:top-[40%] lg:top-[63%] xl:top-[65%] '>
+      <section className='absolute top-[45%] w-full md:top-[40%] lg:top-[63%] xl:top-[62%] '>
         <div className='pb-6 text-center md:pt-0 xl:pt-5'>
-          <Button name='REACH OUT' />
+          <a href='https://drive.google.com/file/d/1EGotGR8NI5k38B6btd0cKUl0Fr2-4uKT/view?usp=sharing'>
+
+          <Button name='DOWNLOAD CV' />
+          </a>
         </div>
         <div>
           <ul className='flex flex-wrap items-center justify-center space-x-2 md:space-x-7 xl:space-x-10'>

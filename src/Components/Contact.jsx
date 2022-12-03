@@ -42,22 +42,22 @@ function Contact() {
             </div>
           </form>
         </div>
-        <div className='space-y-4 pt-10 text-center text-white xl:w-6/12 xl:text-zinc-800'>
+        <div className='lg:pl-[15%] space-y-4 pt-10 text-white xl:w-6/12 xl:text-zinc-800'>
           <h1 className='text-2xl font-semibold'>
             LET'S <em>TALK</em>
           </h1>
           <h2 className='mb-2 text-lg font-semibold'>MY SOCIALS</h2>
-          <div className='space-y-3 text-sm md:text-base lg:ml-[10%]'>
-            <p className='flex items-center'>
+          <div className='space-y-3 text-sm text-white md:text-base'>
+            <p className=''>
               <FaPhone />
-              &nbsp; +63 915-203-0863
+              +63 915-203-0863
             </p>
-            <p className='flex items-center'>
+            <p className=''>
               <FaMapMarkerAlt />
-              &nbsp; Nabua, Camarines Sur
+              Nabua, Camarines Sur
             </p>
-            <p className='flex items-center'>
-              <FaEnvelope /> &nbsp; shancarl.belgica.3@gmail.com
+            <p className=''>
+              <FaEnvelope /> shancarl.belgica.3@gmail.com
             </p>
           </div>
           <p className='text-xs text-white lg:text-base'>
