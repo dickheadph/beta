@@ -6,15 +6,15 @@ import '../index.css';
 function Contact() {
   return (
     <>
-      <h1 className='my-[3%] text-center text-xl font-semibold md:text-zinc-800 xl:text-4xl'>
+      <h1 className='my-[3%] text-center text-3xl font-bold md:text-zinc-800 xl:text-4xl'>
         CONTACT
       </h1>
       <div className='absolute z-20 flex w-full flex-wrap justify-center object-cover'>
         <div className='mx-10 w-full xl:mx-0 xl:w-6/12 xl:px-20'>
-          <h1 className='text-2xl font-semibold'>
+          <h1 className='text-xl font-semibold lg:text-2xl'>
             LETS <em>WORK TOGETHER</em>
           </h1>
-          <h2 className='mb-2 text-lg font-semibold'>SEND ME AN E-MAIL</h2>
+          <h2 className='mb-2 font-semibold lg:text-xl'>SEND ME AN E-MAIL</h2>
           <form action=''>
             <label htmlFor=''>Name</label>
             <br />
@@ -47,7 +47,7 @@ function Contact() {
             LET'S <em>TALK</em>
           </h1>
           <h2 className='mb-2 text-lg font-semibold'>MY SOCIALS</h2>
-          <div className='text-sm md:text-base  lg:ml-[10%]'>
+          <div className='space-y-3 text-sm md:text-base lg:ml-[10%]'>
             <p className='flex items-center'>
               <FaPhone />
               &nbsp; +63 915-203-0863

@@ -85,8 +85,8 @@ function Stack() {
             Tools
           </h1>
         </div>
-        <h1 className='my-[4%] text-center text-xl font-semibold md:text-zinc-800 xl:text-4xl'>
-          PRO<em className='text-zinc-900'>JECTS</em>
+        <h1 className='my-[4%] text-center text-3xl font-bold md:text-zinc-800 xl:text-4xl'>
+          PROJECTS
         </h1>
         <div className='m-2 flex flex-wrap justify-center'>
           <Projects />
@@ -96,10 +96,10 @@ function Stack() {
           <Projects />
           <Projects />
         </div>
-        <h1 className='my-[3%] text-center text-xl font-semibold md:text-zinc-800 xl:text-4xl'>
-          SER<em className='bg-zinc-900 px-2 text-white'>VICES</em>
+        <h1 className='my-[3%] text-center text-3xl font-bold md:text-zinc-800 xl:text-4xl'>
+          SERVICES
         </h1>
-        <div className='flex flex-wrap justify-center md:mx-[10%] xl:mx-10'>
+        <div className='mx-10 flex flex-wrap justify-center md:mx-[10%] xl:mx-10'>
           <Placard />
           <Placard />
           <Placard />
