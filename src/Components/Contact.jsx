@@ -68,7 +68,7 @@ function Contact() {
       <img
         src={Wave}
         alt=''
-        className='h-full w-full rotate-180 overflow-auto lg:h-[750px]'
+        className='h-screen w-full rotate-180 overflow-auto lg:h-[750px]'
       />
     </>
   );
