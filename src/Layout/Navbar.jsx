@@ -4,9 +4,9 @@ import Logo from '../assets/s.png';
 function Navbar() {
   return (
     <div className='z-10'>
-      <div className='flex items-center justify-between border-none bg-[#0a0a0a] px-[7%] py-[4%] text-lg text-white md:px-[12%] md:py-[3%] lg:px-[10%] lg:py-[10px]'>
+      <div className='flex items-center justify-between border-none bg-[#0a0a0a] px-[8%] py-[2%] text-lg text-white md:px-[12%] md:py-[3%] lg:px-[10%] lg:py-[10px]'>
         <div className=''>
-          <img src={Logo} alt='' className='w-[70px] xl:w-[100px]' />
+          <img src={Logo} alt='' className='w-[60px] xl:w-[100px]' />
         </div>
         <div className='hidden lg:block'>
           <ul className='flex justify-evenly'>
@@ -18,7 +18,7 @@ function Navbar() {
           </ul>
         </div>
         <div className='lg:hidden'>
-          <FaBars size='25px' />
+          <FaBars size='20px' />
         </div>
       </div>
     </div>

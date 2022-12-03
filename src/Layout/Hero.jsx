@@ -14,17 +14,17 @@ function Hero() {
             className='hidden rounded-full lg:ml-20 lg:block lg:w-[250px] xl:ml-0 xl:w-[380px]'
           />
         </div>
-        <div className='m-10 w-full text-sm md:mx-auto md:w-9/12 md:text-base lg:w-6/12 xl:mx-0 xl:w-6/12 xl:font-semibold'>
+        <div className='mx-10 mt-8 w-full text-sm md:mx-auto md:w-9/12 md:text-base lg:w-6/12 xl:mx-0 xl:w-6/12 xl:font-semibold'>
           <p className='font-semibold md:font-normal'>HI THERE! I AM...</p>
-          <h1 className='my-6 text-5xl font-bold md:text-6xl lg:text-5xl xl:text-7xl'>
+          <h1 className='my-6 text-4xl font-bold md:text-6xl lg:text-5xl xl:text-7xl'>
             Shan Carl Parce Belgica
           </h1>
-          <p className='md:py-5 lg:py-3'>
+          <p className='mt-5 md:my-5 lg:my-3'>
             I'm a Web-Developer. Specializing in Web Design and Front-end
             Development. I help start-ups Design and Deploy their Busines
             Online.
           </p>
-          <div className='py-5 text-center md:pt-0 xl:pt-5'>
+          <div className='text-center md:pt-0 xl:pt-5'>
             <Button name='REACH OUT' />
           </div>
         </div>
