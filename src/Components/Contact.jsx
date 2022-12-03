@@ -37,12 +37,12 @@ function Contact() {
               id=''
               cols='30'
               rows='5'></textarea>
-            <div className=''>
+            <div className='text-center my-4'>
               <Button type='submit' name='Send' />
             </div>
           </form>
         </div>
-        <div className='space-y-4 text-center text-white xl:w-6/12 xl:text-zinc-800'>
+        <div className='pt-10 space-y-4 text-center text-white xl:w-6/12 xl:text-zinc-800'>
           <h1 className='text-2xl font-semibold'>
             LET'S <em>TALK</em>
           </h1>

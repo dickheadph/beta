@@ -6,7 +6,7 @@ function Hero() {
   return (
     <>
       <Wave />
-      <section className='absolute z-10 flex items-center text-white lg:top-[13%] lg:px-10 xl:top-[15%] xl:left-[20%]'>
+      <section className='absolute z-10 flex items-center text-white lg:top-[13%] lg:px-10 xl:top-[18%] xl:left-[20%]'>
         <div className='border-r-[2px] lg:mr-[4%] lg:w-5/12 xl:mr-[4%] xl:w-4/12'>
           <img
             src={Me}

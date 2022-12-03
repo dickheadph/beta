@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import Logo from '../assets/s.png';
+import Sidebar from './Sidebar';
 function Navbar() {
+  const [open, setOpen] = useState(false);
+  const onSet = () => {
+    console.log('clicked');
+    if (open) {
+      setOpen(false);
+      document.body.style.overflow = 'unset';
+    } else {
+      setOpen(true);
+      document.body.style.overflow = 'hidden';
+    }
+  };
   return (
     <div className='z-10'>
       <div className='flex items-center justify-between border-none bg-[#0a0a0a] px-[8%] py-[2%] text-lg text-white md:px-[12%] md:py-[3%] lg:px-[10%] lg:py-[10px]'>
@@ -18,7 +30,12 @@ function Navbar() {
           </ul>
         </div>
         <div className='lg:hidden'>
-          <FaBars size='20px' />
+          <FaBars size='20px' onClick={onSet} />
+          {open && (
+            <div onClick={onSet}>
+              <Sidebar />
+            </div>
+          )}
         </div>
       </div>
     </div>
