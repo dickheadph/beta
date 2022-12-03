@@ -4,7 +4,7 @@ function Placard() {
   return (
     <>
       <div className='m-2 rounded border-[1px] border-zinc-700 p-5 lg:w-[400px] xl:w-[600px] shadow-md'>
-        <h1 className='font-bold'>
+        <h1 className='font-bold text-center'>
           <FaLock />
           Security
         </h1>

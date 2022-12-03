@@ -20,7 +20,7 @@ function Hero() {
             Shan Carl Parce Belgica
           </h1>
           <p className=''>
-            I'm a Web-Developer. Specializing in Web Design and Front-end
+            I'm a Web-Developer. Specializing in Front-end
             Development. I help start-ups Design and Deploy their Busines
             Online.
           </p>

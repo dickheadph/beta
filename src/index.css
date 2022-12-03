@@ -3,7 +3,7 @@
   font-family: 'Exo', sans-serif;
 }
 .stack {
-  @apply text-3xl text-zinc-800 md:text-5xl lg:text-4xl xl:text-6xl;
+  @apply text-3xl text-zinc-800 md:text-white md:text-5xl lg:text-4xl xl:text-6xl;
 }
 .tool {
   @apply text-2xl text-zinc-800 md:text-4xl lg:text-xl xl:text-4xl;

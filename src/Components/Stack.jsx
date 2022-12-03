@@ -25,7 +25,7 @@ function Stack() {
   return (
     <>
       <Socials />
-      <section className='absolute top-[45%] w-full md:top-[60%] lg:top-[63%] xl:top-[65%] '>
+      <section className='absolute top-[45%] w-full md:top-[40%] lg:top-[63%] xl:top-[65%] '>
         <div className='pb-6 text-center md:pt-0 xl:pt-5'>
           <Button name='REACH OUT' />
         </div>
@@ -59,7 +59,7 @@ function Stack() {
         </div>
         <div>
           <ul className='flex flex-wrap items-center justify-center space-x-2 md:space-x-7 xl:space-x-8'>
-            <li className='font-bold text-zinc-900 xl:text-lg'>
+            <li className='text-xs font-bold text-zinc-900 lg:text-lg'>
               <CgArrowsExchange className='tool' /> A<em>X</em>IOS
             </li>
             <li>

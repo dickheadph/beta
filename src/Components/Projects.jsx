@@ -24,8 +24,8 @@ function Proects() {
             </p>
           </div>
           <div className='mb-4 flex justify-center space-x-6'>
-            <Button name='Live Website' />
-            <SecButton name='Github Repo' />
+            <Button name='Visit site' />
+            <SecButton name='View Repo' />
           </div>
         </div>
       </Card>

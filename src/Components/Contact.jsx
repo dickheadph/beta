@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '../Shared/PrimButton';
+import Button from '../Shared/SecButton';
 import Wave from '../assets/wave.png';
-import { FaFolder, FaPhone, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
+import { FaPhone, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 import '../index.css';
 function Contact() {
   return (
@@ -37,12 +37,12 @@ function Contact() {
               id=''
               cols='30'
               rows='5'></textarea>
-            <div className='text-center my-4'>
-              <Button type='submit' name='Send' />
+            <div className='my-4 text-center'>
+              <Button type='submit' name=' S e n d ' />
             </div>
           </form>
         </div>
-        <div className='pt-10 space-y-4 text-center text-white xl:w-6/12 xl:text-zinc-800'>
+        <div className='space-y-4 pt-10 text-center text-white xl:w-6/12 xl:text-zinc-800'>
           <h1 className='text-2xl font-semibold'>
             LET'S <em>TALK</em>
           </h1>

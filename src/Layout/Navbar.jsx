@@ -5,7 +5,6 @@ import Sidebar from './Sidebar';
 function Navbar() {
   const [open, setOpen] = useState(false);
   const onSet = () => {
-    console.log('clicked');
     if (open) {
       setOpen(false);
       document.body.style.overflow = 'unset';
