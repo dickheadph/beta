@@ -18,9 +18,9 @@ import {
 function Stack() {
   return (
     <>
-      <section className='absolute xl:top-[70%] xl:left-[30%] top-[52%] mx-10'>
+      <section className='absolute xl:top-[70%] md:top-[57%] top-[52%] w-full'>
         <div>
-          <ul className='flex flex-wrap xl:space-x-10 space-x-2 items-center justify-center'>
+          <ul className='flex flex-wrap xl:space-x-10 md:space-x-7 space-x-2 items-center justify-center'>
             <li>
               <SiFirebase className='stack' />
             </li>
@@ -43,12 +43,12 @@ function Stack() {
               <SiJavascript className='stack' />
             </li>
           </ul>
-          <h1 className='text-center text-white xl:text-black text-xl my-2 font-semibold'>
+          <h1 className='text-center text-white xl:text-black md:text-zinc-800 text-xl my-2 font-semibold'>
             Tech<em className='text-zinc-900'>Stack</em>
           </h1>
         </div>
         <div>
-          <ul className='flex flex-wrap space-x-2 xl:space-x-8 items-center justify-center'>
+          <ul className='flex flex-wrap space-x-2 xl:space-x-8 md:space-x-7 items-center justify-center'>
             <li className='xl:text-lg font-bold text-zinc-900'>
               <CgArrowsExchange className='tool' /> A<em>X</em>IOS
             </li>
