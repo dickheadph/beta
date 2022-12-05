@@ -6,7 +6,7 @@
       "url": "https://portfolio-nine-wine-88.vercel.app/images/barangay-hall.jpg",
       "desc": "Barangay Services Management System is a Capstone Project developed to optime and digitalize the current Brgy. Transaction the client has. It is equiped of modules that automates the tranactions seamlessly. User will be able to request legal documents the Brgy. offers e.g Brgy. Clearance and Brgy. Indigency.",
       "live": "",
-      "repo": ""
+      "repo": "https://github.com/shanegel/BSMS"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "url": "https://portfolio-nine-wine-88.vercel.app/images/realestate.png",
       "desc": "Homerun as an e-commerce site built for Homeowners and brokers. This app enables users to create listings and specify whether their Home is for sale or for Rent. This app is built using React.js, TailwindCSS, Firebse and other NPM libraries. This has OAuth feature where user could either write or use their google acc to register. GeoApify API was used for Geo-coding and React-Leaflet to view the property location.",
       "live": "https://realestate-gold.vercel.app/",
-      "repo": ""
+      "repo": "https://github.com/shanegel/real-estate"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "url": "https://portfolio-nine-wine-88.vercel.app/images/monito.png",
       "desc": "Homerun as an e-commerce site built for Homeowners and brokers. This app enables users to create listings and specify whether their Home is for sale or for Rent. This app is built using React.js, TailwindCSS, Firebse and other NPM libraries. This has OAuth feature where user could either write or use their google acc to register. GeoApify API was used for Geo-coding and React-Leaflet to view the property location.",
       "live": "https://petshop-xi.vercel.app/",
-      "repo": ""
+      "repo": "https://github.com/shanegel/petshop"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "url": "https://portfolio-nine-wine-88.vercel.app/images/foodexp.png",
       "desc": "Foodexpress is an E-food app built for Food Shoppers. This app is supported by Firebase as backend and a RestAPI was used to display the available products seen in the web-app. This Project for Food Enthisiasts and Gourmet in search for food that they have never tried before.",
       "live": "https://foodexpress-delta.vercel.app/",
-      "repo": ""
+      "repo": "https://github.com/shanegel/fexpress"
     },
     {
       "id": 5,

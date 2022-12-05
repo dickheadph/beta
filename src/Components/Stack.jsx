@@ -28,7 +28,6 @@ function Stack() {
     axios
       .get('http://localhost:3001/projects')
       .then((res) => {
-        console.log(res.data);
         setProjects(res.data);
       })
       .catch((err) => console.log(err));
@@ -109,6 +108,7 @@ function Stack() {
               name={project.name}
               desc={project.desc}
               live={project.live}
+              repo={project.repo}
             />
           ))}
         </div>

@@ -3,7 +3,7 @@ import Card from '../Shared/Card';
 import Button from '../Shared/PrimButton';
 import SecButton from '../Shared/SecButton';
 function Proects(props) {
-  const { name, img, desc, live } = props;
+  const { name, img, desc, live, repo } = props;
   return (
     <>
       <Card>
@@ -11,7 +11,7 @@ function Proects(props) {
           <img
             src={img}
             alt=''
-            className='object-fit h-[300px] w-full rounded-t-lg'
+            className='h-[300px] w-full rounded-t-lg object-fill'
           />
           <div className='p-4'>
             <h1 className='text-center text-xl font-bold xl:text-left'>
@@ -23,7 +23,9 @@ function Proects(props) {
             <a href={live}>
               <Button name='Visit site' />
             </a>
-            <SecButton name='View Repo' />
+            <a href={repo}>
+              <SecButton name='View Repo' />
+            </a>
           </div>
         </div>
       </Card>
