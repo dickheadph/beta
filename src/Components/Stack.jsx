@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../index.css';
 import { CgArrowsExchange } from 'react-icons/cg';
 import Button from '../Shared/SecButton';
@@ -21,15 +21,25 @@ import Socials from './Socials';
 import Projects from '../Components/Projects';
 import Placard from './Placard';
 import Contact from './Contact';
+import axios from 'axios';
 function Stack() {
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    axios
+      .get('http://localhost:3001/projects')
+      .then((res) => {
+        console.log(res.data);
+        setProjects(res.data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
   return (
     <>
       <Socials />
       <section className='absolute top-[45%] w-full md:top-[40%] lg:top-[63%] xl:top-[62%] '>
         <div className='pb-6 text-center md:pt-0 xl:pt-5'>
           <a href='https://drive.google.com/file/d/1EGotGR8NI5k38B6btd0cKUl0Fr2-4uKT/view?usp=sharing'>
-
-          <Button name='DOWNLOAD CV' />
+            <Button name='DOWNLOAD CV' />
           </a>
         </div>
         <div>
@@ -92,12 +102,15 @@ function Stack() {
           PROJECTS
         </h1>
         <div className='m-2 flex flex-wrap justify-center'>
-          <Projects />
-          <Projects />
-          <Projects />
-          <Projects />
-          <Projects />
-          <Projects />
+          {projects.map((project) => (
+            <Projects
+              id={project.id}
+              img={project.url}
+              name={project.name}
+              desc={project.desc}
+              live={project.live}
+            />
+          ))}
         </div>
         <h1 className='my-[3%] text-center text-3xl font-bold md:text-zinc-800 xl:text-4xl'>
           SERVICES
