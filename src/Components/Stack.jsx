@@ -103,6 +103,7 @@ function Stack() {
         <div className='m-2 flex flex-wrap justify-center'>
           {projects.map((project) => (
             <Projects
+              key={project.id}
               id={project.id}
               img={project.url}
               name={project.name}
