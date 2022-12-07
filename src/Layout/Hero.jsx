@@ -18,7 +18,7 @@ function Hero() {
         <div className='mx-10 w-full text-sm md:mx-auto md:w-9/12 md:text-base lg:w-6/12 xl:mx-0 xl:w-6/12 xl:font-semibold'>
           <p className='font-semibold md:font-normal'>HI THERE! I AM...</p>
           <h1 className='my-6 text-5xl font-extrabold md:text-6xl lg:text-5xl xl:text-7xl'>
-            Shan Carl <em className='text-[#f0b547]'>Parce</em> Belgica
+            Shan Carl <em className='text-[#f0b547]'>Parce</em> Belgica.
           </h1>
           <p className=''>
             I'm a Web-Developer. Specializing in Front-end Development. I help
