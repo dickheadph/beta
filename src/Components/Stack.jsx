@@ -52,7 +52,7 @@ function Stack() {
   return (
     <>
       <Socials />
-      <section className='absolute top-[45%] w-full md:top-[40%] lg:top-[63%] xl:top-[62%] '>
+      <section className='absolute top-[55%] w-full md:top-[40%] lg:top-[63%] xl:top-[62%] '>
         <div className='pb-6 text-center md:pt-0 xl:pt-5'>
           <a href='https://drive.google.com/file/d/1EGotGR8NI5k38B6btd0cKUl0Fr2-4uKT/view?usp=sharing'>
             <Button name='DOWNLOAD CV' />
