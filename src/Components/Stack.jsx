@@ -26,9 +26,25 @@ function Stack() {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     axios
-      .get('http://localhost:3001/projects')
+      .get('https://groovy-groove-268003.firebaseio.com/projects.json')
       .then((res) => {
-        setProjects(res.data);
+        //setProjects(res.data);
+        const val = res.data;
+        //console.log(val);
+        let projects = [];
+
+        for (const key in val) {
+          projects.push({
+            id: key,
+            name: val[key].name,
+            img: val[key].img,
+            live: val[key].live,
+            repo: val[key].repo,
+            desc: val[key].desc,
+          });
+        }
+        //console.log(projects);
+        setProjects(projects);
       })
       .catch((err) => console.log(err));
   }, []);
@@ -105,7 +121,7 @@ function Stack() {
             <Projects
               key={project.id}
               id={project.id}
-              img={project.url}
+              img={project.img}
               name={project.name}
               desc={project.desc}
               live={project.live}
