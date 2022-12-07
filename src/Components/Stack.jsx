@@ -21,6 +21,7 @@ import Socials from './Socials';
 import Projects from '../Components/Projects';
 import Placard from './Placard';
 import Contact from './Contact';
+import Loading from '../Shared/Loading';
 import axios from 'axios';
 function Stack() {
   const [projects, setProjects] = useState([]);
