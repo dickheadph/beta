@@ -79,25 +79,25 @@ function Stack() {
         <div>
           <ul className='flex flex-wrap items-center justify-center space-x-2 md:space-x-7 xl:space-x-10'>
             <li>
-              <SiFirebase className='stack animate-pulse' />
+              <SiFirebase className='stack' />
             </li>
             <li>
-              <SiReact className='stack animate-pulse' />
+              <SiReact className='stack' />
             </li>
             <li>
-              <SiTailwindcss className='stack  animate-pulse' />
+              <SiTailwindcss className='stack' />
             </li>
             <li>
-              <SiHtml5 className='stack animate-pulse' />
+              <SiHtml5 className='stack' />
             </li>
             <li>
-              <SiCss3 className='stack animate-pulse' />
+              <SiCss3 className='stack' />
             </li>
             <li>
-              <SiBootstrap className='stack animate-pulse' />
+              <SiBootstrap className='stack' />
             </li>
             <li>
-              <SiJavascript className='stack animate-pulse' />
+              <SiJavascript className='stack' />
             </li>
           </ul>
           <h1 className='font-semiboldtext-zinc-800 my-2 text-center text-xl xl:text-black'>
