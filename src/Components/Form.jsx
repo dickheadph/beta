@@ -28,7 +28,7 @@ function Form() {
       repo: projects.repo,
       desc: projects.desc,
     });
-    setProjects([]);
+    setProjects('');
     alert('Submitted Succesfully');
   };
   return (
