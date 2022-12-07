@@ -21,11 +21,11 @@ import Socials from './Socials';
 import Projects from '../Components/Projects';
 import Placard from './Placard';
 import Contact from './Contact';
-import Loading from '../Shared/Loading';
 import axios from 'axios';
+import serviceFor from '../Components/ServicesLits';
 function Stack() {
   const [projects, setProjects] = useState([]);
-  useEffect(() => {
+  const getProjects = () => {
     axios
       .get('https://groovy-groove-268003.firebaseio.com/projects.json')
       .then((res) => {
@@ -48,7 +48,25 @@ function Stack() {
         setProjects(projects);
       })
       .catch((err) => console.log(err));
+  };
+  useEffect(() => {
+    getProjects();
   }, []);
+
+  const {
+    secIcon,
+    security,
+    securityDtls,
+    mainIcon,
+    maintainability,
+    maintainabilityDtls,
+    qualityIcon,
+    quality,
+    qualityDtls,
+    desIcon,
+    design,
+    designDtls,
+  } = serviceFor;
   return (
     <>
       <Socials />
@@ -83,12 +101,12 @@ function Stack() {
             </li>
           </ul>
           <h1 className='font-semiboldtext-zinc-800 my-2 text-center text-xl xl:text-black'>
-            Tech<em className='text-zinc-900'>Stack</em>
+            Tech<em className='text-[#f0b547]'>Stack</em>
           </h1>
         </div>
         <div>
           <ul className='flex flex-wrap items-center justify-center space-x-2 md:space-x-7 xl:space-x-8'>
-            <li className='text-xs font-bold text-zinc-900 lg:text-lg'>
+            <li className='text-xs font-bold text-[#4d4d50] lg:text-lg'>
               <CgArrowsExchange className='tool' /> A<em>X</em>IOS
             </li>
             <li>
@@ -134,10 +152,14 @@ function Stack() {
           SERVICES
         </h1>
         <div className='mx-10 flex flex-wrap justify-center md:mx-[10%] xl:mx-10'>
-          <Placard />
-          <Placard />
-          <Placard />
-          <Placard />
+          <Placard icon={secIcon} title={security} desc={securityDtls} />
+          <Placard
+            icon={mainIcon}
+            title={maintainability}
+            desc={maintainabilityDtls}
+          />
+          <Placard icon={desIcon} title={design} desc={designDtls} />
+          <Placard icon={qualityIcon} title={quality} desc={qualityDtls} />
         </div>
         <Contact />
       </section>

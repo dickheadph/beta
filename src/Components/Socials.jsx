@@ -5,7 +5,7 @@ function Socials() {
   return (
     <>
       <div className='absolute bottom-[8%] left-12 z-10 hidden lg:block'>
-        <ul className='flex lg:block lg:space-y-3'>
+        <ul className='flex lg:block lg:space-y-3 text-zinc-700'>
           <a href='https://github.com/shanegel'>
             <li className='flex items-center'>
               <SiGithub className='animate-bounce' />
