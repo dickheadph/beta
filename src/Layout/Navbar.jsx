@@ -1,26 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FaBars, FaDownload } from 'react-icons/fa';
 import Logo from '../assets/s.png';
 import Sidebar from './Sidebar';
 import { Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { sidebarAction } from '../Store';
 function Navbar() {
-  const [open, setOpen] = useState(false);
-  const onSet = () => {
-    if (open) {
-      setOpen(false);
-      document.body.style.overflow = 'unset';
-    } else {
-      setOpen(true);
-      document.body.style.overflow = 'hidden';
-    }
+  const dispatch = useDispatch();
+  const open = useSelector((state) => state.showSidebar);
+
+  const sidebarHandler = () => {
+    dispatch(sidebarAction.showSidebar());
+    document.body.style.overflow = 'hidden';
   };
   return (
     <div className='z-50'>
       <div className='flex items-center justify-between border-none bg-transparent px-10 py-6 text-white'>
         <div className=''>
           <img src={Logo} alt='' className='relative w-[60px] xl:w-[100px]' />
-          <Link to={'/form'}>
-          </Link>
+          <Link to={'/form'}></Link>
         </div>
         <div className='hidden lg:block'>
           <ul className='flex justify-evenly'>
@@ -38,11 +36,13 @@ function Navbar() {
           </ul>
         </div>
         <div className='lg:hidden'>
-          <FaBars size='20px' className='' onClick={onSet} />
+          {!open && (
+            <FaBars size='20px' className='relative' onClick={sidebarHandler} />
+          )}
           {open && (
-            <div className='' onClick={onSet}>
-              <Sidebar />
-            </div>
+            <Sidebar />
+            // <div className='' onClick={onSet}>
+            // </div>
           )}
         </div>
       </div>

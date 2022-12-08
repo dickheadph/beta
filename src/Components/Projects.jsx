@@ -17,7 +17,7 @@ function Proects(props) {
             <h1 className='text-center text-xl font-bold xl:text-left'>
               {name}
             </h1>
-            <p className='text-justify indent-8 text-sm md:text-base'>{desc}</p>
+            <p className='text-justify text-sm md:text-base'>{desc}</p>
           </div>
           <div className='mb-4 flex justify-center space-x-6'>
             <a href={live}>

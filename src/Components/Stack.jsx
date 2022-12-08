@@ -85,6 +85,9 @@ function Stack() {
               <SiReact className='stack' />
             </li>
             <li>
+              <SiJavascript className='stack' />
+            </li>
+            <li>
               <SiTailwindcss className='stack' />
             </li>
             <li>
@@ -95,9 +98,6 @@ function Stack() {
             </li>
             <li>
               <SiBootstrap className='stack' />
-            </li>
-            <li>
-              <SiJavascript className='stack' />
             </li>
           </ul>
           <h1 className='font-semiboldtext-zinc-800 my-2 text-center text-xl xl:text-black'>

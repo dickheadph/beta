@@ -1,14 +1,24 @@
 import React from 'react';
 import { FaXing } from 'react-icons/fa';
-
+import { useSelector, useDispatch } from 'react-redux';
+import { sidebarAction } from '../Store';
 function Sidebar() {
+  const dispatch = useDispatch();
+  useSelector((state) => state.showSidebar);
+  const sidebarHandler = () => {
+    dispatch(sidebarAction.showSidebar());
+    document.body.style.overflow = 'unset';
+  };
   return (
     <>
-      <div className='absolute inset-0 z-50 bg-[#0003]'>
-        <FaXing />
-        <h1>Sample</h1>
-        <div>
-          <ul className='absolute inset-0 z-20 bg-[#0003]'>
+      <div className='absolute inset-0 z-50'>
+        <FaXing
+          size='20px'
+          onClick={sidebarHandler}
+          className='absolute right-0 z-50 m-9'
+        />
+        <div className=''>
+          <ul className='absolute inset-0 bg-[#0005]'>
             <li>Test</li>
             <li>Test</li>
             <li>Test</li>
