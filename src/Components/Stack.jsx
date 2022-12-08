@@ -11,7 +11,7 @@ import {
   SiBootstrap,
   SiJavascript,
   SiFramer,
-  SiFigma,
+  SiRedux,
   SiGit,
   SiNpm,
   SiGithub,
@@ -106,8 +106,10 @@ function Stack() {
         </div>
         <div>
           <ul className='flex flex-wrap items-center justify-center space-x-2 md:space-x-7 xl:space-x-8'>
-            <li className='text-xs font-bold text-[#4d4d50] lg:text-lg'>
-              <CgArrowsExchange className='tool' /> A<em>X</em>IOS
+            <li>
+              <SiRedux className='tool' />
+            </li>
+            <li className='font-bold text-[#424244]'>AXIOS
             </li>
             <li>
               <SiGit className='tool' />
@@ -120,9 +122,6 @@ function Stack() {
             </li>
             <li>
               <SiFramer className='tool' />
-            </li>
-            <li>
-              <SiFigma className='tool' />
             </li>
             <li>
               <SiVisualstudiocode className='tool' />

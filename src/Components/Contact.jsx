@@ -10,7 +10,7 @@ function Contact() {
         CONTACT
       </h1>
       <div className='absolute z-20 flex w-full flex-wrap justify-center object-cover'>
-        <form className='mx-10 w-full xl:mx-0 xl:w-6/12 xl:px-20'>
+        <div className='mx-10 w-full xl:mx-0 xl:w-6/12 xl:px-20'>
           <h1 className='text-xl font-semibold lg:text-2xl'>
             LETS <em className='text-[#f7c848]'>WORK TOGETHER</em>
           </h1>
@@ -50,7 +50,7 @@ function Contact() {
               </button>
             </div>
           </form>
-        </form>
+        </div>
         <div className='space-y-4 pt-10 text-white lg:pl-[15%] xl:w-6/12 xl:text-zinc-800'>
           <h1 className='text-2xl font-semibold'>
             LET'S <em className='text-[#f0b547]'>TALK</em>

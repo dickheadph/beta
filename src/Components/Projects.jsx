@@ -11,7 +11,7 @@ function Proects(props) {
           <img
             src={img}
             alt=''
-            className='h-[300px] w-full rounded-t-lg object-fit p-1'
+            className='lg:h-[300px] h-[250px] w-full rounded-t-lg object-fit p-1'
           />
           <div className='p-4'>
             <h1 className='text-center text-xl font-bold xl:text-left'>
