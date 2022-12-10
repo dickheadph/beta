@@ -72,7 +72,7 @@ function Stack() {
       <Socials />
       <section className='absolute top-[55%] w-full md:top-[40%] lg:top-[63%] xl:top-[62%] '>
         <div className='pb-6 text-center md:pt-0 xl:pt-5'>
-          <a href='https://drive.google.com/file/d/1EGotGR8NI5k38B6btd0cKUl0Fr2-4uKT/view?usp=sharing'>
+          <a href='https://drive.google.com/file/d/1oh_8LAKLfdOtgEqkh9b8uLrVsPTy0FUa/view?usp=share_link'>
             <Button name='DOWNLOAD CV' />
           </a>
         </div>
@@ -109,8 +109,7 @@ function Stack() {
             <li>
               <SiRedux className='tool' />
             </li>
-            <li className='font-bold text-[#424244]'>AXIOS
-            </li>
+            <li className='font-bold text-[#424244]'>AXIOS</li>
             <li>
               <SiGit className='tool' />
             </li>
