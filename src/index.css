@@ -2,6 +2,9 @@
 .body {
   font-family: 'Exo', sans-serif;
 }
+.link {
+  @apply border-b-[2px] border-slate-400 p-3;
+}
 .stack {
   @apply text-3xl text-zinc-800 md:text-5xl md:text-white lg:text-4xl lg:text-[#424244] xl:text-6xl;
 }

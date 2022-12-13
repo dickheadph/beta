@@ -6,7 +6,9 @@ import '../index.css';
 function Contact() {
   return (
     <>
-      <h1 className='my-[3%] text-center text-3xl font-bold md:text-zinc-800 xl:text-4xl'>
+      <h1
+        className='my-[3%] text-center text-3xl font-bold md:text-zinc-800 xl:text-4xl'
+        id='contact'>
         CONTACT
       </h1>
       <div className='absolute z-20 flex w-full flex-wrap justify-center object-cover'>

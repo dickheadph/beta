@@ -130,23 +130,27 @@ function Stack() {
             Tools
           </h1>
         </div>
-        <h1 className='my-[4%] text-center text-3xl font-bold md:text-zinc-800 xl:text-4xl'>
-          PROJECTS
-        </h1>
-        <div className='m-2 flex flex-wrap justify-center'>
-          {projects.map((project) => (
-            <Projects
-              key={project.id}
-              id={project.id}
-              img={project.img}
-              name={project.name}
-              desc={project.desc}
-              live={project.live}
-              repo={project.repo}
-            />
-          ))}
-        </div>
-        <h1 className='my-[3%] text-center text-3xl font-bold md:text-zinc-800 xl:text-4xl'>
+        <section id='projects'>
+          <h1 className='my-[4%] text-center text-3xl font-bold md:text-zinc-800 xl:text-4xl'>
+            PROJECTS
+          </h1>
+          <div className='m-2 flex flex-wrap justify-center'>
+            {projects.map((project) => (
+              <Projects
+                key={project.id}
+                id={project.id}
+                img={project.img}
+                name={project.name}
+                desc={project.desc}
+                live={project.live}
+                repo={project.repo}
+              />
+            ))}
+          </div>
+        </section>
+        <h1
+          className='my-[3%] text-center text-3xl font-bold md:text-zinc-800 xl:text-4xl'
+          id='services'>
           SERVICES
         </h1>
         <div className='mx-10 flex flex-wrap justify-center md:mx-[10%] xl:mx-10'>
@@ -159,7 +163,7 @@ function Stack() {
           <Placard icon={desIcon} title={design} desc={designDtls} />
           <Placard icon={qualityIcon} title={quality} desc={qualityDtls} />
         </div>
-        <Contact />
+        <Contact/>
       </section>
     </>
   );

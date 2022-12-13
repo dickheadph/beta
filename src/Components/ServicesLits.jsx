@@ -15,7 +15,7 @@ export const serviceFor = {
   quality: 'Quality',
   qualityIcon: <FaCheck className='text-2xl text-[#f0b547]' />,
   qualityDtls:
-    'Firs impression lasts. Your website serves as the first contact with your client/customers before they see your products/services making the reason why it is necessary to showcase website quality.',
+    'First impression lasts. Your website serves as the first contact with your client/customers before they see your products/services making the reason why it is necessary to showcase website quality.',
 };
 
 export default serviceFor;

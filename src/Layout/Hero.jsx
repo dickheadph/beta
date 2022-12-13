@@ -7,7 +7,9 @@ function Hero() {
     <>
       <Wave />
       <Navbar />
-      <section className='absolute z-10 flex items-center text-white lg:top-[13%] lg:px-10 xl:top-[16%] xl:left-[20%]'>
+      <section
+        className='absolute z-10 flex items-center text-white lg:top-[13%] lg:px-10 xl:top-[16%] xl:left-[20%]'
+        id='profile'>
         <div className='border-r-[2px] lg:mr-[4%] lg:w-5/12 xl:mr-[4%] xl:w-4/12'>
           <img
             src={Me}

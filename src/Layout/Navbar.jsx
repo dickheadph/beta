@@ -23,6 +23,7 @@ function Navbar() {
         <div className='hidden lg:block'>
           <ul className='flex justify-evenly'>
             <li className='mx-4'>Profile</li>
+            <a href="#projects"></a>
             <li className='mx-4'>Projects</li>
             <li className='mx-4'>Services</li>
             <li className='mx-4'>Contact</li>
