@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import '../index.css';
-import { CgArrowsExchange } from 'react-icons/cg';
-import Button from '../Shared/SecButton';
+// import { CgArrowsExchange } from 'react-icons/cg';
+// import Button from '../Shared/SecButton';
 import {
-  SiFirebase,
+  SiMongodb,
+  SiExpress,
+  SiNodedotjs,
   SiTailwindcss,
-  SiHtml5,
-  SiCss3,
   SiReact,
   SiBootstrap,
   SiJavascript,
-  SiFramer,
+  SiPostman,
   SiRedux,
   SiGit,
   SiNpm,
+  SiFirebase,
   SiGithub,
   SiVisualstudiocode,
 } from 'react-icons/si';
@@ -23,35 +24,54 @@ import Placard from './Placard';
 import Contact from './Contact';
 import axios from 'axios';
 import serviceFor from '../Components/ServicesLits';
+const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT;
+
 function Stack() {
   const [projects, setProjects] = useState([]);
+  const [category, setCategory] = useState('projects');
   const getProjects = () => {
     axios
-      .get('https://groovy-groove-268003.firebaseio.com/projects.json')
+      .get(`${API_ENDPOINT}/${category}`)
       .then((res) => {
         //setProjects(res.data);
-        const val = res.data;
-        //console.log(val);
-        let projects = [];
+        const projects = res.data.data.projects;
 
-        for (const key in val) {
-          projects.push({
-            id: key,
-            name: val[key].name,
-            img: val[key].img,
-            live: val[key].live,
-            repo: val[key].repo,
-            desc: val[key].desc,
-          });
-        }
-        //console.log(projects);
+        console.log(res.data.data.projects);
         setProjects(projects);
       })
       .catch((err) => console.log(err));
   };
   useEffect(() => {
     getProjects();
-  }, []);
+  }, [category]);
+  // const getProjects = () => {
+  //   axios
+  //     //.get(`api/${category}`)
+  //     .get('https://groovy-groove-268003.firebaseio.com/projects.json')
+  //     .then((res) => {
+  //       //setProjects(res.data);
+  //       const val = res.data;
+  //       //console.log(val);
+  //       let projects = [];
+
+  //       for (const key in val) {
+  //         projects.push({
+  //           id: key,
+  //           name: val[key].name,
+  //           img: val[key].img,
+  //           live: val[key].live,
+  //           repo: val[key].repo,
+  //           desc: val[key].desc,
+  //         });
+  //       }
+  //       //console.log(projects);
+  //       setProjects(projects);
+  //     })
+  //     .catch((err) => console.log(err));
+  // };
+  // useEffect(() => {
+  //   getProjects();
+  // }, []);
 
   const {
     secIcon,
@@ -70,19 +90,29 @@ function Stack() {
   return (
     <>
       <Socials />
-      <section className='absolute top-[55%] w-full md:top-[40%] lg:top-[63%] xl:top-[62%] '>
+      <section className='absolute top-[55%] w-full md:top-[50%] lg:top-[55%] xl:top-[62%] '>
         <div className='pb-6 text-center md:pt-0 xl:pt-5'>
           <a href='https://drive.google.com/file/d/1oh_8LAKLfdOtgEqkh9b8uLrVsPTy0FUa/view?usp=share_link'>
-            <Button name='DOWNLOAD CV' />
+            <button
+              name='DOWNLOAD CV'
+              className='rounded-sm bg-[#f0b547]/90 py-2 px-3'>
+              DOWNLOAD CV
+            </button>
           </a>
         </div>
         <div>
-          <ul className='flex flex-wrap items-center justify-center space-x-2 md:space-x-7 xl:space-x-10'>
+          <ul className='flex flex-wrap items-center justify-center space-x-2 md:space-x-7 xl:space-x-10 xl:pt-8'>
             <li>
-              <SiFirebase className='stack' />
+              <SiMongodb className='stack' />
+            </li>
+            <li>
+              <SiExpress className='stack' />
             </li>
             <li>
               <SiReact className='stack' />
+            </li>
+            <li>
+              <SiNodedotjs className='stack' />
             </li>
             <li>
               <SiJavascript className='stack' />
@@ -91,17 +121,14 @@ function Stack() {
               <SiTailwindcss className='stack' />
             </li>
             <li>
-              <SiHtml5 className='stack' />
-            </li>
-            <li>
-              <SiCss3 className='stack' />
+              <SiFirebase className='stack' />
             </li>
             <li>
               <SiBootstrap className='stack' />
             </li>
           </ul>
-          <h1 className='font-semiboldtext-zinc-800 my-2 text-center text-xl xl:text-black'>
-            Tech<em className='text-[#f0b547]'>Stack</em>
+          <h1 className='my-4 text-center text-xl font-semibold text-zinc-800 xl:text-black'>
+            Tech<em className='text-[#f0b547]'> Stack</em>
           </h1>
         </div>
         <div>
@@ -120,7 +147,7 @@ function Stack() {
               <SiNpm className='tool' />
             </li>
             <li>
-              <SiFramer className='tool' />
+              <SiPostman className='tool' />
             </li>
             <li>
               <SiVisualstudiocode className='tool' />
@@ -134,14 +161,50 @@ function Stack() {
           <h1 className='my-[4%] text-center text-3xl font-bold md:text-zinc-800 xl:text-4xl'>
             PROJECTS
           </h1>
+          <ul className='flex justify-center space-x-2 font-semibold'>
+            <li
+              className='category'
+              onClick={() => {
+                setCategory('projects');
+              }}
+              value='test'>
+              All
+            </li>
+            <li
+              className=''
+              onClick={() => {
+                setCategory('projects/full-stack');
+              }}>
+              Fullstack
+            </li>
+            <li
+              onClick={() => {
+                setCategory('projects/front-end');
+              }}>
+              Frontend
+            </li>
+            <li
+              onClick={() => {
+                setCategory('projects/back-end-api');
+              }}>
+              Api
+            </li>
+            <li
+              onClick={() => {
+                setCategory('projects/native-app');
+              }}>
+              App
+            </li>
+          </ul>
           <div className='m-2 flex flex-wrap justify-center'>
             {projects.map((project) => (
               <Projects
                 key={project.id}
                 id={project.id}
-                img={project.img}
+                img={project.projectImage}
                 name={project.name}
                 desc={project.desc}
+                cat={project.category}
                 live={project.live}
                 repo={project.repo}
               />
@@ -163,7 +226,7 @@ function Stack() {
           <Placard icon={desIcon} title={design} desc={designDtls} />
           <Placard icon={qualityIcon} title={quality} desc={qualityDtls} />
         </div>
-        <Contact/>
+        <Contact />
       </section>
     </>
   );

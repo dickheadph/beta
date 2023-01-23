@@ -3,19 +3,22 @@
   font-family: 'Exo', sans-serif;
 }
 .link {
-  @apply border-b-[2px] border-slate-400 p-3;
+  @apply border-b-[2px] p-3 text-[#f0b547];
 }
 .stack {
-  @apply text-3xl text-zinc-800 md:text-5xl md:text-white lg:text-4xl lg:text-[#424244] xl:text-6xl;
+  @apply text-3xl text-zinc-800 md:text-5xl md:text-[#424244] lg:text-4xl lg:text-[#424244] xl:text-6xl;
+}
+.category {
+  @apply border-b-[2px] border-b-[#f0b547];
 }
 .tool {
   @apply text-2xl text-[#4d4d50] md:text-4xl lg:text-xl xl:text-4xl;
 }
 .input {
-  @apply my-2 w-full rounded border-[1px] border-stone-500 bg-transparent py-2 px-3 outline-none;
+  @apply my-2 w-full rounded border-[1px] border-l-2 border-stone-500 border-l-[#f0b547] bg-transparent py-2 px-3 outline-none;
 }
 .textArea {
-  @apply w-full rounded border-[1px] border-stone-500 bg-transparent p-2 outline-none;
+  @apply w-full rounded border-[1px] border-l-2 border-stone-500 border-l-[#f0b547] bg-transparent p-2 text-white outline-none;
 }
 .form {
   @apply rounded-lg border-[1px] border-stone-800 py-2 px-3 outline-none;

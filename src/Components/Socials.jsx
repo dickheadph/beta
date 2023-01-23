@@ -4,8 +4,8 @@ import { FaEnvelope, FaMobile } from 'react-icons/fa';
 function Socials() {
   return (
     <>
-      <div className='absolute bottom-[8%] left-12 z-10 hidden lg:block'>
-        <ul className='flex lg:block lg:space-y-3 text-zinc-700'>
+      <div className='absolute left-12 z-10 hidden lg:bottom-[20%] lg:block lg:text-sm xl:bottom-[10%] xl:text-base'>
+        <ul className='flex text-zinc-700 lg:block lg:space-y-3'>
           <a href='https://github.com/shanegel'>
             <li className='flex items-center'>
               <SiGithub className='animate-bounce' />
@@ -21,7 +21,7 @@ function Socials() {
             &nbsp;+63 915-203-0863
           </li>
           <li>
-            <SiLinkedin className={''}/>
+            <SiLinkedin className={''} />
           </li>
           <li>
             <SiIndeed className={''} />

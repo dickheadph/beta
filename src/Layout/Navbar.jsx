@@ -14,16 +14,17 @@ function Navbar() {
     document.body.style.overflow = 'hidden';
   };
   return (
-    <div className='z-50'>
+    <div className='z-50' id='profile'>
       <div className='flex items-center justify-between border-none bg-transparent px-10 py-6 text-white'>
         <div className=''>
-          <img src={Logo} alt='' className='relative w-[60px] xl:w-[100px]' />
-          <Link to={'/form'}></Link>
+          <Link to={'/form'}>
+            <img src={Logo} alt='' className='relative w-[60px] xl:w-[100px]' />
+          </Link>
         </div>
         <div className='hidden lg:block'>
           <ul className='flex justify-evenly'>
             <li className='mx-4'>Profile</li>
-            <a href="#projects"></a>
+            <a href='#projects'></a>
             <li className='mx-4'>Projects</li>
             <li className='mx-4'>Services</li>
             <li className='mx-4'>Contact</li>

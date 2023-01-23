@@ -3,7 +3,7 @@ import Card from '../Shared/Card';
 import Button from '../Shared/PrimButton';
 import SecButton from '../Shared/SecButton';
 function Proects(props) {
-  const { name, img, desc, live, repo } = props;
+  const { name, cat, img, desc, live, repo } = props;
   return (
     <>
       <Card>
@@ -11,12 +11,13 @@ function Proects(props) {
           <img
             src={img}
             alt=''
-            className='lg:h-[300px] h-[250px] w-full rounded-t-lg object-fit p-1'
+            className='object-fit h-[250px] w-full rounded-t-lg p-1 lg:h-[300px]'
           />
           <div className='p-4'>
             <h1 className='text-center text-xl font-bold xl:text-left'>
               {name}
             </h1>
+            <h1>Tag: {cat.toUpperCase()}</h1>
             <p className='text-justify text-sm md:text-base'>{desc}</p>
           </div>
           <div className='mb-4 flex justify-center space-x-6'>

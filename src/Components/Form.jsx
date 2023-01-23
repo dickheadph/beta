@@ -47,7 +47,7 @@ function Form() {
         <label htmlFor='img'>Img url</label>
         <br />
         <input
-          type='text'
+          type='url'
           id='img'
           value={img}
           className='form'
@@ -57,7 +57,7 @@ function Form() {
         <label htmlFor='live'>Live url</label>
         <br />
         <input
-          type='text'
+          type='url'
           id='live'
           value={live}
           className='form'
@@ -67,7 +67,7 @@ function Form() {
         <label htmlFor='repo'>Repo url</label>
         <br />
         <input
-          type='text'
+          type='url'
           id='repo'
           value={repo}
           className='form'
