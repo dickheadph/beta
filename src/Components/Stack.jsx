@@ -30,13 +30,14 @@ function Stack() {
   const [projects, setProjects] = useState([]);
   const [category, setCategory] = useState('projects');
   const getProjects = () => {
+    `${API_ENDPOINT}/${category}`;
     axios
       .get(`${API_ENDPOINT}/${category}`)
       .then((res) => {
         //setProjects(res.data);
         const projects = res.data.data.projects;
 
-        console.log(res.data.data.projects);
+        //console.log(res.data.data.projects);
         setProjects(projects);
       })
       .catch((err) => console.log(err));
