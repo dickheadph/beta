@@ -19,7 +19,7 @@ function Proects(props) {
               {name}
             </h1>
             <h1 className='flex items-center'>
-              <MdTag />: {cat.toUpperCase()}
+              <MdTag color='orange' />: {cat.toUpperCase()}
             </h1>
             <p className='text-justify text-sm md:text-base'>{desc}</p>
           </div>
