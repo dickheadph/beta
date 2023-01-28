@@ -32,7 +32,7 @@ function Stack() {
   const getProjects = () => {
     axios
       //.get(`https://beta-ochre-vercel-app.onrender.com`)
-      .get(`${API_ENDPOINT}${category}`)
+      .get(`${API_ENDPOINT}/${category}`)
       .then((res) => {
         console.log(`${API_ENDPOINT}/${category}`);
         const projects = res.data.data.projects;
