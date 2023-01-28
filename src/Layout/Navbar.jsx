@@ -2,10 +2,11 @@ import React from 'react';
 import { FaBars, FaDownload } from 'react-icons/fa';
 import Logo from '../assets/s.png';
 import Sidebar from './Sidebar';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { sidebarAction } from '../Store';
 function Navbar() {
+  const navigateTo = useNavigate();
   const dispatch = useDispatch();
   const open = useSelector((state) => state.showSidebar);
 
@@ -16,10 +17,12 @@ function Navbar() {
   return (
     <div className='z-50' id='profile'>
       <div className='flex items-center justify-between border-none bg-transparent px-10 py-6 text-white'>
-        <div className=''>
-          <Link to={'/auth'}>
-            <img src={Logo} alt='' className='relative w-[60px] xl:w-[100px]' />
-          </Link>
+        <div
+          className=''
+          onClick={() => {
+            navigateTo('/auth');
+          }}>
+          <img src={Logo} alt='' className='relative w-[60px] xl:w-[100px]' />
         </div>
         <div className='hidden lg:block'>
           <ul className='flex justify-evenly'>
