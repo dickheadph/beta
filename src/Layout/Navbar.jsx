@@ -20,7 +20,7 @@ function Navbar() {
         <div
           className=''
           onClick={() => {
-            navigateTo('/auth');
+            navigateTo('/admin/admin-login');
           }}>
           <img src={Logo} alt='' className='relative w-[60px] xl:w-[100px]' />
         </div>

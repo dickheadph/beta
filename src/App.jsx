@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Index />} />
           <Route path='/form' element={<Form />} />
-          <Route path='/auth' element={<Auth />} />
+          <Route path='/admin/admin-login' element={<Auth />} />
         </Routes>
       </BrowserRouter>
     </div>
