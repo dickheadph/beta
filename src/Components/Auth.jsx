@@ -22,6 +22,7 @@ function Auth() {
   };
   const submitHandler = (e) => {
     e.preventDefault();
+
     setLoading(true);
     axios
       .post(`${API_ENDPOINT}/admin/admin-login`, {
@@ -44,11 +45,13 @@ function Auth() {
     <Loading />
   ) : (
     <div className='h-screen bg-stone-100'>
-      <div className=''>
+      <div className='mx-auto w-full'>
         <h1 className='pt-[10%] text-center text-3xl font-bold'>
           Admin <em className='text-[#f7c848]'>Log In</em>
         </h1>
-        <form onSubmit={submitHandler} className='items-center p-[10%]'>
+        <form
+          onSubmit={submitHandler}
+          className='items-center p-[10%] lg:mx-[25%] lg:p-[5%]'>
           <label htmlFor=''>E-mail:</label> <br />
           <input
             type='text'
