@@ -31,11 +31,11 @@ function Stack() {
   const [category, setCategory] = useState('projects');
   const getProjects = () => {
     axios
-      .get(`https://beta-ochre-vercel-app.onrender.com`)
+      //.get(`https://beta-ochre-vercel-app.onrender.com`)
+      .get(`${API_ENDPOINT}/${category}`)
       .then((res) => {
-        //setProjects(res.data);
-        //const projects = res.data.data.projects;
-        console.log(`${API_ENDPOINT}/${category}`);
+        const projects = res.data.data.projects;
+        //console.log(`${API_ENDPOINT}/${category}`);
 
         //console.log(res.data.data.projects);
         setProjects(projects);
