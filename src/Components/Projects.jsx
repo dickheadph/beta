@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '../Shared/Card';
 import Button from '../Shared/PrimButton';
 import SecButton from '../Shared/SecButton';
+import { MdTag } from 'react-icons/md';
 function Proects(props) {
   const { name, cat, img, desc, live, repo } = props;
   return (
@@ -17,7 +18,9 @@ function Proects(props) {
             <h1 className='text-center text-xl font-bold xl:text-left'>
               {name}
             </h1>
-            <h1>Tag: {cat.toUpperCase()}</h1>
+            <h1 className='flex items-center'>
+              <MdTag />: {cat.toUpperCase()}
+            </h1>
             <p className='text-justify text-sm md:text-base'>{desc}</p>
           </div>
           <div className='mb-4 flex justify-center space-x-6'>

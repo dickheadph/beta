@@ -96,7 +96,7 @@ function Contact() {
             <div className='my-4 text-center'>
               <button
                 type='submit'
-                className='w-full rounded border-b-2 border-[#f0b547] bg-[#5c5d65] py-2 px-3 text-white'>
+                className='submit'>
                 Submit
               </button>
             </div>

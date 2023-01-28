@@ -17,7 +17,7 @@ function Navbar() {
     <div className='z-50' id='profile'>
       <div className='flex items-center justify-between border-none bg-transparent px-10 py-6 text-white'>
         <div className=''>
-          <Link to={'/form'}>
+          <Link to={'/auth'}>
             <img src={Logo} alt='' className='relative w-[60px] xl:w-[100px]' />
           </Link>
         </div>

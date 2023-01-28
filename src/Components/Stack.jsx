@@ -33,11 +33,7 @@ function Stack() {
     axios
       .get(`${API_ENDPOINT}/${category}`)
       .then((res) => {
-        console.log(`${API_ENDPOINT}/${category}`);
         const projects = res.data.data.projects;
-        //console.log(`${API_ENDPOINT}/${category}`);
-
-        //console.log(res.data.data.projects);
         setProjects(projects);
       })
       .catch((err) => console.log(err));
