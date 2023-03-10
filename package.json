@@ -10,7 +10,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "serve": "vite preview",
-    "start": "vite start"
+    "start": "node start"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
