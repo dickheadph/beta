@@ -8,7 +8,7 @@ import {
   SiNodedotjs,
   SiTailwindcss,
   SiReact,
-  SiBootstrap,
+  SiNextdotjs,
   SiJavascript,
   SiPostman,
   SiRedux,
@@ -100,6 +100,9 @@ function Stack() {
         <div>
           <ul className='flex flex-wrap items-center justify-center space-x-2 md:space-x-7 xl:space-x-10 xl:pt-8'>
             <li>
+              <SiNextdotjs className='stack' />
+            </li>
+            <li>
               <SiMongodb className='stack' />
             </li>
             <li>
@@ -112,16 +115,13 @@ function Stack() {
               <SiNodedotjs className='stack' />
             </li>
             <li>
-              <SiJavascript className='stack' />
+              <SiJavascript className='stack text-[#f0b547]/90' />
             </li>
             <li>
               <SiTailwindcss className='stack' />
             </li>
             <li>
               <SiFirebase className='stack' />
-            </li>
-            <li>
-              <SiBootstrap className='stack' />
             </li>
           </ul>
           <h1 className='my-4 text-center text-xl font-semibold text-zinc-800 xl:text-black'>

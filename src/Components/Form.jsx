@@ -9,7 +9,7 @@ function Form() {
   const [loading, setLoading] = useState(false);
   const [projects, setProjects] = useState({
     name: '',
-    projectImage: '',
+    projectImage: null,
     live: '',
     repo: '',
     desc: '',
@@ -18,13 +18,13 @@ function Form() {
   const { name, projectImage, live, repo, desc, category } = projects;
 
   const onMutate = (e) => {
-    if (e.target.file) {
+    if (e.target.files) {
       setProjects((prevSate) => ({
         ...prevSate,
-        projectImage: e.target.file,
+        projectImage: e.target.files[0],
       }));
     }
-    if (!e.target.file) {
+    if (!e.target.files) {
       setProjects((prevSate) => ({
         ...prevSate,
         [e.target.id]: e.target.value,
@@ -35,20 +35,21 @@ function Form() {
   const submitHandler = (e) => {
     e.preventDefault();
     setLoading(true);
-    console.log(projects);
+    const formData = new FormData();
+
+    formData.append('name', projects.name);
+    formData.append('projectImage', projects.projectImage);
+    formData.append('desc', projects.desc);
+    formData.append('live', projects.live);
+    formData.append('repo', projects.repo);
+    formData.append('category', projects.category);
+
+    console.log(...formData);
 
     axios
-      .post(`${API_ENDPOINT}/projects`, {
-        name: projects.name,
-        projectImage: projects.projectImage,
-        desc: projects.desc,
-        live: projects.live,
-        repo: projects.repo,
-        category: projects.category,
-      })
+      .post(`${API_ENDPOINT}/projects`, formData)
       .then((res) => {
         console.log(res);
-        setProjects('');
         toast.success('Submitted Succesfully');
         setLoading(false);
       })
@@ -88,7 +89,7 @@ function Form() {
         <label htmlFor='live'>Live url</label>
         <br />
         <input
-          type='url'
+          type='text'
           id='live'
           value={live}
           className='form'
@@ -98,7 +99,7 @@ function Form() {
         <label htmlFor='repo'>Repo url</label>
         <br />
         <input
-          type='url'
+          type='text'
           id='repo'
           value={repo}
           className='form'

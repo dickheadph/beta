@@ -9,7 +9,7 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ToastContainer/>
+    <ToastContainer />
     <Provider store={store}>
       <App />
     </Provider>

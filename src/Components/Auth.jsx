@@ -54,7 +54,7 @@ function Auth() {
           className='items-center p-[10%] lg:mx-[25%] lg:p-[5%]'>
           <label htmlFor=''>E-mail:</label> <br />
           <input
-            type='text'
+            type='email'
             required
             id='email'
             value={email}
