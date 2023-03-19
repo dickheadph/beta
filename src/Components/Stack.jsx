@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../index.css';
 // import { CgArrowsExchange } from 'react-icons/cg';
 // import Button from '../Shared/SecButton';
+import CV from '../../public/M_ShanCarl_Belgica.pdf';
 import {
   SiMongodb,
   SiExpress,
@@ -89,12 +90,13 @@ function Stack() {
       <Socials />
       <section className='absolute top-[55%] w-full md:top-[50%] lg:top-[55%] xl:top-[62%] '>
         <div className='pb-6 text-center md:pt-0 xl:pt-5'>
-          <a href='https://drive.google.com/file/d/1oh_8LAKLfdOtgEqkh9b8uLrVsPTy0FUa/view?usp=share_link'>
-            <button
-              name='DOWNLOAD CV'
-              className='rounded-sm bg-[#f0b547]/90 py-2 px-3'>
-              DOWNLOAD CV
-            </button>
+          {/* <a href='https://drive.google.com/file/d/1oh_8LAKLfdOtgEqkh9b8uLrVsPTy0FUa/view?usp=share_link'>
+          </a> */}
+          <a
+            href={CV}
+            name='DOWNLOAD CV'
+            className='rounded-sm bg-[#f0b547]/90 py-2 px-3'>
+            DOWNLOAD CV
           </a>
         </div>
         <div>

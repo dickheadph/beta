@@ -114,7 +114,7 @@ function Contact() {
             </p>
             <p className=''>
               <FaMapMarkerAlt className='text-[#f0b547]' />
-              Nabua, Camarines Sur
+              Valenzuela City, Manila, Ph
             </p>
             <p className=''>
               <FaEnvelope className='text-[#f0b547]' />{' '}
