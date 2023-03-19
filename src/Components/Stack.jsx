@@ -18,6 +18,9 @@ import {
   SiFirebase,
   SiGithub,
   SiVisualstudiocode,
+  SiPhp,
+  SiMysql,
+  SiLaravel,
 } from 'react-icons/si';
 import Socials from './Socials';
 import Projects from '../Components/Projects';
@@ -125,6 +128,15 @@ function Stack() {
             <li>
               <SiFirebase className='stack' />
             </li>
+            {/* <li>
+              <SiPhp className='stack' />
+            </li>
+            <li>
+              <SiLaravel className='stack' />
+            </li>
+            <li>
+              <SiMysql className='stack' />
+            </li> */}
           </ul>
           <h1 className='my-4 text-center text-xl font-semibold text-zinc-800 xl:text-black'>
             Tech<em className='text-[#f0b547]'> Stack</em>
@@ -196,18 +208,22 @@ function Stack() {
             </li>
           </ul>
           <div className='m-2 flex flex-wrap justify-center'>
-            {projects.map((project) => (
-              <Projects
-                key={project.id}
-                id={project.id}
-                img={project.projectImage}
-                name={project.name}
-                desc={project.desc}
-                cat={project.category}
-                live={project.live}
-                repo={project.repo}
-              />
-            ))}
+            {projects.length == 0 ? (
+              <h1 className='text-xl font-semibold'>Comming Soon...</h1>
+            ) : (
+              projects.map((project) => (
+                <Projects
+                  key={project.id}
+                  id={project.id}
+                  img={project.projectImage}
+                  name={project.name}
+                  desc={project.desc}
+                  cat={project.category}
+                  live={project.live}
+                  repo={project.repo}
+                />
+              ))
+            )}
           </div>
         </section>
         <h1
