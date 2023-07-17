@@ -209,7 +209,9 @@ function Stack() {
           </ul>
           <div className='m-2 flex flex-wrap justify-center'>
             {projects.length == 0 ? (
-              <h1 className='text-xl font-semibold'>Comming Soon...</h1>
+              <h1 className='text-xl font-semibold'>
+                Loading Projects. Please wait...
+              </h1>
             ) : (
               projects.map((project) => (
                 <Projects
