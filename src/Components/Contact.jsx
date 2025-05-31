@@ -114,7 +114,7 @@ function Contact() {
             </p>
             <p className=''>
               <FaMapMarkerAlt className='text-[#f0b547]' />
-              Valenzuela City, Manila, Ph
+              Antipolo City, Rizal, Ph
             </p>
             <p className=''>
               <FaEnvelope className='text-[#f0b547]' />{' '}
