@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiIndeed, SiLinkedin, SiGithub } from 'react-icons/si';
+import { SiIndeed, SiLinkedin, SiGithub, SiFitbit } from 'react-icons/si';
 import { FaEnvelope, FaMobile } from 'react-icons/fa';
 function Socials() {
   return (
@@ -27,7 +27,7 @@ function Socials() {
             </li>
           </a>
           <li>
-            <SiIndeed className={''} />
+            <SiFitbit className={''} />
           </li>
         </ul>
       </div>
