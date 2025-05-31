@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../index.css';
 // import { CgArrowsExchange } from 'react-icons/cg';
 // import Button from '../Shared/SecButton';
-import CV from '../../public/M_ShanCarl_Belgica.pdf';
+import CV from '../../public/ShanCarl_Belgica_Support.pdf';
 import {
   SiHtml5,
   SiNodedotjs,
