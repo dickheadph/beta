@@ -2,6 +2,7 @@ import React from 'react';
 import { FaXing } from 'react-icons/fa';
 import { useSelector, useDispatch } from 'react-redux';
 import { sidebarAction } from '../Store';
+import CV from '../../public/ShanCarl_Belgica_Support.pdf';
 import '../index.css';
 function Sidebar() {
   const dispatch = useDispatch();
