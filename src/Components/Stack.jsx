@@ -20,7 +20,6 @@ import {
   SiPhp,
   SiMysql,
   SiSap,
-  SiXml,
   SiLaravel,
 } from 'react-icons/si';
 import Socials from './Socials';
@@ -92,6 +91,7 @@ function Stack() {
   return (
     <>
       <Socials />
+      <br />
       <section className='absolute top-[55%] w-full md:top-[50%] lg:top-[55%] xl:top-[62%] '>
         <div className='pb-6 text-center md:pt-0 xl:pt-5'>
           {/* <a href='https://drive.google.com/file/d/1oh_8LAKLfdOtgEqkh9b8uLrVsPTy0FUa/view?usp=share_link'>
@@ -119,9 +119,6 @@ function Stack() {
             </li>
             <li>
               <SiTailwindcss className='stack' />
-            </li>
-            <li>
-              <SiXml className='stack' />
             </li>
             <li>
               <SiMysql className='stack' />
