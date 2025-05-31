@@ -20,6 +20,7 @@ import {
   SiPhp,
   SiMysql,
   SiSap,
+  SiXml,
   SiLaravel,
 } from 'react-icons/si';
 import Socials from './Socials';
