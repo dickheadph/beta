@@ -19,6 +19,7 @@ import {
   SiVisualstudiocode,
   SiPhp,
   SiMysql,
+  SiSap,
   SiLaravel,
 } from 'react-icons/si';
 import Socials from './Socials';
