@@ -21,10 +21,10 @@ function Socials() {
             &nbsp;+63 915-203-0863
           </li>
           <a href='www.linkedin.com/in/shabelgica-ex0718'>
-          <li>
-            <SiLinkedin className={''} />
-            &nbsp;www.linkedin.com/in/shabelgica
-          </li>
+            <li className='flex items-center'>
+              <SiLinkedin className={''} />
+              &nbsp;www.linkedin.com/in/shabelgica
+            </li>
           </a>
           <li>
             <SiIndeed className={''} />
