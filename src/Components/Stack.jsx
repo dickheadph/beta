@@ -143,7 +143,7 @@ function Stack() {
               <SiGit className='tool' />
             </li>
             <li>
-              <SiNpm className='tool' />
+              <SiSap className='tool' />
             </li>
             <li>
               <SiPostman className='tool' />
