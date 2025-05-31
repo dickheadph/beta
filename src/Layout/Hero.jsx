@@ -21,7 +21,7 @@ function Hero() {
             Shan Carl <em className='text-[#f0b547]'>Parce</em> Belgica.
           </h1>
           <p className='text-stone-300'>
-            Associate in Application Management wherein I oversee the support, optimization, and administration of SaaS applications, ensuring seamless performance and reliability. I am a highly motivated technical support, web designer and tech savvy individual hoping to be part of a reputable company. To hone and leverage my abilities in IT Industry and related technologies. To apply the knowledge and skills I learned in my studies, internship and job experience and be part of a strong workforce and to contribute positive results to a company.
+An Associate in Application Management wherein I oversee the support, optimization, and administration of SaaS applications using REST API & MsSQL. I am a highly motivated tech support, web designer and a tech savvy individual hoping to hone, leverage widen my horizon in IT Industry and related technologies. To apply the knowledge and skills I learned in my profession, be part of a strong workforce and contribute positive results to an organization.
           </p>
         </div>
       </section>
