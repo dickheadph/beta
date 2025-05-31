@@ -29,7 +29,7 @@ function Socials() {
           <a href='https://ph.jobstreet.com/profile/shancarl-belgica-MXt2fqB71R'>
             <li className='flex items-center'>
               <SiFitbit className='' />
-              &nbsp;https://ph.jobstreet.com/profile/shancarl-belgica
+              &nbsp;https://jobstreet.com/shancarl-belgica
             </li>
           </a>
         </ul>
