@@ -43,7 +43,7 @@ function Sidebar() {
             </li>
             <li className='link'>
               <a
-                href='https://drive.google.com/file/d/1EGotGR8NI5k38B6btd0cKUl0Fr2-4uKT/view?usp=sharing'
+                href={CV}
                 onClick={sidebarHandler}>
                 CV
               </a>
