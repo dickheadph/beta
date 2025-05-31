@@ -4,7 +4,7 @@ import '../index.css';
 // import Button from '../Shared/SecButton';
 import CV from '../../public/M_ShanCarl_Belgica.pdf';
 import {
-  SiMongodb,
+  SiHtml5,
   SiExpress,
   SiNodedotjs,
   SiTailwindcss,
@@ -105,10 +105,7 @@ function Stack() {
         <div>
           <ul className='flex flex-wrap items-center justify-center space-x-2 md:space-x-7 xl:space-x-10 xl:pt-8'>
             <li>
-              <SiNextdotjs className='stack' />
-            </li>
-            <li>
-              <SiMongodb className='stack' />
+              <SiHtml5 className='stack' />
             </li>
             <li>
               <SiExpress className='stack' />
@@ -126,7 +123,7 @@ function Stack() {
               <SiTailwindcss className='stack' />
             </li>
             <li>
-              <SiFirebase className='stack' />
+              <SiMysql className='stack' />
             </li>
             {/* <li>
               <SiPhp className='stack' />
@@ -144,10 +141,7 @@ function Stack() {
         </div>
         <div>
           <ul className='flex flex-wrap items-center justify-center space-x-2 md:space-x-7 xl:space-x-8'>
-            <li>
-              <SiRedux className='tool' />
-            </li>
-            <li className='font-bold text-[#424244]'>AXIOS</li>
+            <li className='font-bold text-[#424244]'>SNOW</li>
             <li>
               <SiGit className='tool' />
             </li>
