@@ -121,6 +121,9 @@ function Stack() {
               <SiTailwindcss className='stack' />
             </li>
             <li>
+              <SiXml className='stack' />
+            </li>
+            <li>
               <SiMysql className='stack' />
             </li>
             {/* <li>
