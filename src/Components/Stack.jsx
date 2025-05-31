@@ -115,7 +115,7 @@ function Stack() {
               <SiNodedotjs className='stack' />
             </li>
             <li>
-              <SiJavascript className='stack text-[#f0b547]/90' />
+              <SiJavascript className='stack text-[#f0b547]/90 animate-bounce' />
             </li>
             <li>
               <SiTailwindcss className='stack' />
