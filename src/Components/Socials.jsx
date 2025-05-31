@@ -20,7 +20,7 @@ function Socials() {
             <FaMobile className={''} />
             &nbsp;+63 915-203-0863
           </li>
-          <a href='www.linkedin.com/in/shabelgica-ex0718'>
+          <a href='https://www.linkedin.com/in/shabelgica-ex0718'>
             <li className='flex items-center'>
               <SiLinkedin className={''} />
               &nbsp;www.linkedin.com/in/shabelgica
