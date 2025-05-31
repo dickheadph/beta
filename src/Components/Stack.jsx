@@ -5,7 +5,7 @@ import '../index.css';
 import CV from '../../public/M_ShanCarl_Belgica.pdf';
 import {
   SiHtml5,
-  SiExpress,
+  SiXml,
   SiNodedotjs,
   SiTailwindcss,
   SiReact,
@@ -108,7 +108,7 @@ function Stack() {
               <SiHtml5 className='stack' />
             </li>
             <li>
-              <SiExpress className='stack' />
+              <SiXml className='stack' />
             </li>
             <li>
               <SiReact className='stack' />
