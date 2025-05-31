@@ -5,6 +5,7 @@ function Index() {
   return (
     <>
       <Hero />
+      <br />
       <Stack />
     </>
   );
