@@ -5,7 +5,6 @@ import '../index.css';
 import CV from '../../public/M_ShanCarl_Belgica.pdf';
 import {
   SiHtml5,
-  SiXml,
   SiNodedotjs,
   SiTailwindcss,
   SiReact,
@@ -107,9 +106,6 @@ function Stack() {
           <ul className='flex flex-wrap items-center justify-center space-x-2 md:space-x-7 xl:space-x-10 xl:pt-8'>
             <li>
               <SiHtml5 className='stack' />
-            </li>
-            <li>
-              <SiXml className='stack' />
             </li>
             <li>
               <SiReact className='stack' />
