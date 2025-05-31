@@ -22,6 +22,7 @@ import {
   SiMysql,
   SiLaravel,
 } from 'react-icons/si';
+import { VscAzureDevops } from "react-icons/vsc";
 import Socials from './Socials';
 import Projects from '../Components/Projects';
 import Placard from './Placard';
@@ -146,7 +147,7 @@ function Stack() {
               <SiGit className='tool' />
             </li>
             <li>
-              <SiGithub className='tool' />
+              <VscAzureDevops className='tool' />
             </li>
             <li>
               <SiNpm className='tool' />
