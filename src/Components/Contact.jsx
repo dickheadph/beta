@@ -114,7 +114,7 @@ function Contact() {
             </p>
             <p className=''>
               <FaMapMarkerAlt className='text-[#f0b547]' />
-              Antipolo City, Rizal, Ph
+              1870 Antipolo City, Rizal, Ph
             </p>
             <p className=''>
               <FaEnvelope className='text-[#f0b547]' />{' '}
@@ -122,7 +122,7 @@ function Contact() {
             </p>
           </div>
           <p className='text-xs text-white lg:text-base'>
-            &copy; ALL RIGHTS RESERVED - 2022
+            &copy; SHAN  -  ALL RIGHTS RESERVED - 2022
           </p>
         </div>
       </div>

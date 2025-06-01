@@ -24,7 +24,7 @@
   @apply rounded-lg border-[1px] border-stone-800 py-2 px-3 outline-none;
 }
 .submit {
-  @apply w-full rounded border-b-2 border-[#f0b547] bg-[#5c5d65] py-2 px-3 text-white;
+  @apply w-full rounded border-2 border-[#f0b547] bg-[#5c5d65] py-1 px-2 text-white;
 }
 @tailwind base;
 @tailwind components;
