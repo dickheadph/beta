@@ -1,6 +1,6 @@
 import React from 'react';
 import Wave from '../Components/Wave';
-import Me from '../assets/src/assets/IMG_20250601_14013376.jpeg';
+import Me from '../assets/src/assets/me2.png';
 import Navbar from './Navbar';
 function Hero() {
   return (
