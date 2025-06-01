@@ -101,7 +101,7 @@ function Stack() {
             DOWNLOAD CV
           </a>
         </div>
-        <div className='mt-6 lg:mt-[2%] xl:mt-0'>
+        <div className='mt-5 lg:mt-[2%] xl:mt-0'>
           <ul className='flex flex-wrap items-center justify-center space-x-2 md:space-x-7 lg:space-x-8 xl:space-x-10 xl:pt-8'>
             <li>
               <SiHtml5 className='stack' />
