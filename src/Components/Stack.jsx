@@ -92,10 +92,8 @@ function Stack() {
     <>
       <Socials />
       <br />
-      <section className='absolute top-[55%] w-full md:top-[50%] lg:top-[55%] xl:top-[62%] '>
+      <section className='absolute top-[55%] w-full sm:top-[30%] md:top-[50%] lg:top-[65%] xl:top-[62%] '>
         <div className='pb-6 text-center md:pt-0 xl:pt-5'>
-          {/* <a href='https://drive.google.com/file/d/1oh_8LAKLfdOtgEqkh9b8uLrVsPTy0FUa/view?usp=share_link'>
-          </a> */}
           <a
             href={CV}
             name='DOWNLOAD CV'
@@ -103,8 +101,8 @@ function Stack() {
             DOWNLOAD CV
           </a>
         </div>
-        <div>
-          <ul className='flex flex-wrap items-center justify-center space-x-2 md:space-x-7 xl:space-x-10 xl:pt-8'>
+        <div className='lg:mt-[2%] xl:mt-0'>
+          <ul className='flex flex-wrap items-center justify-center space-x-2 md:space-x-7 lg:space-x-8 xl:space-x-10 xl:pt-8'>
             <li>
               <SiHtml5 className='stack' />
             </li>
