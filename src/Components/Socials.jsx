@@ -4,7 +4,7 @@ import { FaEnvelope, FaMobile } from 'react-icons/fa';
 function Socials() {
   return (
     <>
-      <div className='absolute left-12 z-30 hidden lg:bottom-[20%] lg:block lg:text-xs xl:bottom-[10%] xl:text-base'>
+      <div className='absolute left-12 z-30 hidden lg:bottom-[20%] lg:block lg:text-sm xl:bottom-[10%] xl:text-base'>
         <ul className='flex text-zinc-700 lg:block lg:space-y-3'>
           <li className='flex items-center'>
             <FaMobile className={''} />
