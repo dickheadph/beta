@@ -128,12 +128,6 @@ function Stack() {
           <ul className='flex flex-wrap items-center justify-center space-x-2 md:space-x-7 xl:space-x-8'>
             <li className='font-bold text-[#424244]'>SNOW</li>
             <li>
-              <SiGit className='tool' />
-            </li>
-            <li>
-              <SiSap className='tool' />
-            </li>
-            <li>
               <VscAzureDevops className='tool' />
             </li>
             <li>
@@ -144,6 +138,9 @@ function Stack() {
             </li>
             <li>
               <SiNewrelic className='tool' />
+            </li>
+            <li>
+              <SiSap className='tool' />
             </li>
           </ul>
           <h1 className='my-2 text-center text-xl font-semibold text-zinc-900'>
