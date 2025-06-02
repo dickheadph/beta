@@ -23,6 +23,7 @@ import Placard from './Placard';
 import Contact from './Contact';
 import axios from 'axios';
 import serviceFor from '../Components/ServicesLits';
+import LoadingProjects from '../Shared/LoadProjects';
 const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT;
 
 function Stack() {
@@ -190,7 +191,7 @@ function Stack() {
           <div className='m-2 flex flex-wrap justify-center'>
             {projects.length == 0 ? (
               <h1 className='text-xl font-semibold'>
-                Loading Projects. Please wait...
+                <LoadingProjects/>
               </h1>
             ) : (
               projects.map((project) => (
