@@ -190,9 +190,16 @@ function Stack() {
           </ul>
           <div className='m-2 flex flex-wrap justify-center'>
             {projects.length == 0 ? (
-              <h1 className='text-xl font-semibold'>
+              <>
+              <ul className='flex-wrap justify-center'>
+                <li>
                 <LoadingProjects/>
-              </h1>
+                </li>
+                <li>
+                <h1 className='text-sm lg:text-sm xl:text-base'>Loading...</h1>
+                </li>
+              </ul>
+              </>
             ) : (
               projects.map((project) => (
                 <Projects
