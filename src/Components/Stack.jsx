@@ -13,7 +13,10 @@ import {
   SiVisualstudiocode,
   SiMysql,
   SiSap,
+  SiNewrelic,
 } from 'react-icons/si';
+import { VscAzureDevops } from 'react-icons/vsc';
+import { BsFiletypeXml } from "react-icons/bs";
 import Socials from './Socials';
 import Projects from '../Components/Projects';
 import Placard from './Placard';
@@ -111,6 +114,9 @@ function Stack() {
               <SiTailwindcss className='stack' />
             </li>
             <li>
+              <BsFiletypeXml className='stack' />
+            </li>
+            <li>
               <SiMysql className='stack' />
             </li>
           </ul>
@@ -128,10 +134,16 @@ function Stack() {
               <SiSap className='tool' />
             </li>
             <li>
+              <VscAzureDevops className='tool' />
+            </li>
+            <li>
               <SiPostman className='tool' />
             </li>
             <li>
               <SiVisualstudiocode className='tool' />
+            </li>
+            <li>
+              <SiNewrelic className='tool' />
             </li>
           </ul>
           <h1 className='my-2 text-center text-xl font-semibold text-zinc-900'>

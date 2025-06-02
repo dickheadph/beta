@@ -6,7 +6,7 @@ export const Expirience = () => {
     <h1 className='my-[4%] text-center text-3xl font-bold md:text-zinc-800 xl:text-4xl'>
     EXPERIENCE
   </h1>
-  <div className='lg:flex flex-flex-wrap items-between text-xs lg:text-base'>
+  <div className='lg:flex flex-flex-wrap items-between text-xs lg:text-base px-6'>
     <div className='text-left lg:m-6'>
     <h2 className='text-xl font-semibold text-zinc-800 xl:text-black'>Associate, <em className='text-[#f0b547]'> Application</em> Management
     <h3 className='my-2 text-base'>STRADA(Alight Solutions)</h3>
