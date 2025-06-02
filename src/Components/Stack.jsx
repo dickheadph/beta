@@ -1,26 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import '../index.css';
-// import { CgArrowsExchange } from 'react-icons/cg';
-// import Button from '../Shared/SecButton';
+import Expirience from './Expirience';
 import CV from '../../public/ShanCarl_Belgica_Support.pdf';
 import {
   SiHtml5,
   SiNodedotjs,
   SiTailwindcss,
   SiReact,
-  SiNextdotjs,
   SiJavascript,
   SiPostman,
-  SiRedux,
   SiGit,
-  SiNpm,
-  SiFirebase,
-  SiGithub,
   SiVisualstudiocode,
-  SiPhp,
   SiMysql,
   SiSap,
-  SiLaravel,
 } from 'react-icons/si';
 import Socials from './Socials';
 import Projects from '../Components/Projects';
@@ -121,15 +113,6 @@ function Stack() {
             <li>
               <SiMysql className='stack' />
             </li>
-            {/* <li>
-              <SiPhp className='stack' />
-            </li>
-            <li>
-              <SiLaravel className='stack' />
-            </li>
-            <li>
-              <SiMysql className='stack' />
-            </li> */}
           </ul>
           <h1 className='my-4 text-center text-xl font-semibold text-zinc-800 xl:text-black'>
             Tech<em className='text-[#f0b547]'> Stack</em>
@@ -155,6 +138,7 @@ function Stack() {
             Tools
           </h1>
         </div>
+        <Expirience/>
         <section id='projects'>
           <h1 className='my-[4%] text-center text-3xl font-bold md:text-zinc-800 xl:text-4xl'>
             PROJECTS
