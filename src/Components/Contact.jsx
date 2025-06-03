@@ -86,7 +86,7 @@ function Contact() {
             <br />
             <textarea
               type='text'
-              className='textArea text-stone-400'
+              className='textArea text-black'
               id='message'
               required
               cols='30'

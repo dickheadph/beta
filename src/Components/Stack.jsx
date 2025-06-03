@@ -13,7 +13,7 @@ import {
   SiVisualstudiocode,
   SiMysql,
   SiSap,
-  SiNewrelic,
+  SiJira,
 } from 'react-icons/si';
 import { VscAzureDevops } from 'react-icons/vsc';
 import { BsFiletypeXml } from "react-icons/bs";
@@ -138,7 +138,7 @@ function Stack() {
               <SiVisualstudiocode className='tool' />
             </li>
             <li>
-              <SiNewrelic className='tool' />
+              <SiJira className='tool' />
             </li>
             <li>
               <SiSap className='tool' />
