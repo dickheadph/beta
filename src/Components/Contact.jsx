@@ -110,7 +110,7 @@ function Contact() {
           <div className='space-y-3 text-sm text-[#87888b] md:text-base'>
             <p className=''>
               <FaPhone className='text-[#f0b547]' />
-              +63 915-203-0863
+              (+63) 915-203-0863
             </p>
             <p className=''>
               <FaMapMarkerAlt className='text-[#f0b547]' />

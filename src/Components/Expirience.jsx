@@ -10,9 +10,10 @@ export const Expirience = () => {
     <div className='text-left lg:mx-6 lg:my-0 my-4'>
     <h2 className='text-xl font-semibold text-zinc-800 xl:text-black'>Associate, <em className='text-[#f0b547]'> Application</em> Management
     <h3 className='my-2 text-base'>STRADA(Alight Solutions)</h3>
-    <p className='text-sm lg:text-sm xl:text-base'>2023 - 2025</p>
+    <p className='text-sm lg:text-sm xl:text-base'>2023 - Present</p>
     </h2>
     </div>
+    {/*
     <div className='text-left lg:mx-6 lg:my-0 my-4'>
     <h2 className='text-xl font-semibold text-zinc-800 xl:text-black'>Tech. Support <em className='text-[#f0b547]'> Engineer</em>(API)
     <h3 className='my-2 text-base'>eFlexervicesInc.</h3>
@@ -25,9 +26,9 @@ export const Expirience = () => {
     <p className='text-sm lg:text-sm xl:text-base'>2028 - Present</p>
     </h2>
     </div>
+     */}
     </div>
-    {/*
-  */}
+    
   </>
   )
 }

@@ -8,7 +8,7 @@ function Socials() {
         <ul className='flex text-zinc-700 lg:block lg:space-y-3'>
           <li className='flex items-center'>
             <FaMobile className={''} />
-            &nbsp;+63 915-203-0863
+            &nbsp;(+63) 915-203-0863
           </li>
           <li className='flex items-center my-3'>
             <FaEnvelope className={''} />
