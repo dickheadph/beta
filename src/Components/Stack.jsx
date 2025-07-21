@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../index.css';
 import Expirience from './Expirience';
-import CV from '../../public/ShanCarl_Belgica_Support.pdf';
+import CV from '../../public/ShanCarl_Belgica_Tech_Supp.pdf';
 import {
   SiHtml5,
   SiNodedotjs,
