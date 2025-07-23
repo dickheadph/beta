@@ -20,9 +20,12 @@ function Hero() {
           <h1 className='my-6 text-5xl font-extrabold md:text-6xl lg:text-5xl xl:text-7xl'>
             Shan Carl <em className='text-[#f0b547]'>Parce</em> Belgica<em className='text-[#f0b547]'>.</em>
           </h1>
-          <p className='text-stone-300 lg:text-sm xl:text-base'>
-An Associate in Application Management wherein I oversee the support, optimization, and administration of SaaS applications using REST API & MsSQL. I am a highly motivated tech support, web designer and a tech savvy individual hoping to hone, leverage and widen my horizon in IT Industry and related technologies. To apply the knowledge and skills I learned in my profession, be part of a strong workforce and contribute positive results to an organization.
-          </p>
+          <p className='text-stone-300 lg:text-sm xl:text-base'>A highly motivated SaaS support, web designer and tech savvy individual with a strong track 
+record in resolving technical issues and supporting clients ina dynamic IT and remote 
+environment. Experienced in using SNOW and JIRA for incident/case management and ticket 
+tracking. Knowledgeable in SQL for data analysis and trobleshooting backend related issues.
+Confident in giving clear, concise and efficient resolution to deliver high quality support for both local and foreign clients and
+leverage my skills in IT Industry and related technologies to enhance business operation.</p>
         </div>
       </section>
     </>
