@@ -35,6 +35,7 @@ function Stack() {
       .then((res) => {
         const projects = res.data.data.projects;
         setProjects(projects);
+        console.log(projects);
       })
       .catch((err) => console.log(err));
   };
