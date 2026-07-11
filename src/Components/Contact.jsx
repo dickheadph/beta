@@ -48,7 +48,7 @@ function Contact() {
             LETS <em className='text-[#f7c848]'>WORK TOGETHER</em>
           </h1>
           <h2 className='mb-2 font-semibold lg:text-xl'>SEND ME AN E-MAIL</h2>
-          <form action='' onSubmit={submitHandler}>
+          <form action='' method='' onSubmit={submitHandler}>
             <label htmlFor='name'>Name</label>
             <br />
             <input
